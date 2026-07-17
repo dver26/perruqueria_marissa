@@ -49,7 +49,8 @@
     "parts":[
         {
             "name": "Tall",
-            "duration": 15
+            "duration": 15,
+            "availableEmployees": ["Marissa", "Gemma"]
         }
     ]
   },
