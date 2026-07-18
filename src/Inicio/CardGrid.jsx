@@ -14,13 +14,6 @@ const CardGrid = () => {
           return <Card key={i} servei={servei} duracioTotal={duracioTotal} />
         })}
       </div>
-      <button
-        onClick={() =>
-          dispatch({ type: 'CAMBIAR_PANTALLA', payload: 'escollir' })
-        }
-      >
-        Hola
-      </button>
     </>
   )
 }
