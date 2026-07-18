@@ -1,20 +1,22 @@
-import serveis from '../serveis.json'
+import { useAppContext } from './utils/useAppContext.js'
 import './App.css'
 
-import Card from './Card'
+import CardGrid from './Inicio/CardGrid.jsx'
+import CreacioServei from './CreacioServei/CreacioServei.jsx'
 
 const App = () => {
-  return (
-    <div className='container-grid'>
-      {serveis.map((servei) => {
-        const duracioTotal = servei.parts.reduce(
-          (sum, part) => sum + part.duration,
-          0
-        )
-        return <Card servei={servei} duracioTotal={duracioTotal} />
-      })}
-    </div>
-  )
+  const { state } = useAppContext()
+
+  const handleScreen = () => {
+    switch (state.pantalla) {
+      case 'inicio':
+        return <CardGrid />
+      case 'escollir':
+        return <CreacioServei />
+    }
+  }
+
+  return <>{handleScreen()}</>
 }
 
 export default App

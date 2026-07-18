@@ -1,0 +1,28 @@
+import Card from './Card'
+import { useAppContext } from '../utils/useAppContext'
+
+const CardGrid = () => {
+  const { state, dispatch } = useAppContext()
+  return (
+    <>
+      <div className='container-grid'>
+        {state.serveis.map((servei, i) => {
+          const duracioTotal = servei.parts.reduce(
+            (sum, part) => sum + part.duration,
+            0
+          )
+          return <Card key={i} servei={servei} duracioTotal={duracioTotal} />
+        })}
+      </div>
+      <button
+        onClick={() =>
+          dispatch({ type: 'CAMBIAR_PANTALLA', payload: 'escollir' })
+        }
+      >
+        Hola
+      </button>
+    </>
+  )
+}
+
+export default CardGrid

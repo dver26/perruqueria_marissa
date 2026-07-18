@@ -1,9 +1,17 @@
+import { useAppContext } from '../utils/useAppContext'
 import './Card.css'
 
 const Card = ({ servei, duracioTotal }) => {
+  const { dispatch } = useAppContext()
   return (
     <>
-      <div className='element-grid' key={servei.name}>
+      <div
+        onClick={() =>
+          dispatch({ type: 'CAMBIAR_PANTALLA', payload: 'escollir' })
+        }
+        className='element-grid'
+        key={servei.name}
+      >
         <div className='header'>
           <h3 className='titulo'>{servei.name}</h3>
           <span className='duracio-total'>{duracioTotal} min</span>
