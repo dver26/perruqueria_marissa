@@ -4,109 +4,109 @@
     "parts": [
       {
         "name": "Aplicació",
-        "duration": 10,
+        "duration": [5, 10],
         "availableEmployees": ["Marissa", "Ruth"]
       },
       {
         "name": "Exposició",
-        "duration": 50,
+        "duration": [30, 40, 50],
         "availableEmployees": []
       },
       {
         "name": "Sellador i Rentat",
-        "duration": 15,
+        "duration": [20, 30, 40],
         "availableEmployees": ["Ruth"]
       }
     ]
   },
   {
     "name": "Pentinar",
-    "parts":[
-        {
-            "name": "Rentat",
-            "duration": 10,
-            "availableEmployees": ["Ruth", "Marissa", "Gemma"]
-        },
-        {
-            "name": "Pentinat",
-            "duration": 40,
-            "availableEmployees": ["Ruth", "Marissa", "Gemma"]
-        }
+    "parts": [
+      {
+        "name": "Rentat",
+        "duration": [10],
+        "availableEmployees": ["Ruth", "Marissa", "Gemma"]
+      },
+      {
+        "name": "Pentinat",
+        "duration": [20, 30, 40],
+        "availableEmployees": ["Ruth", "Marissa", "Gemma"]
+      }
     ]
   },
   {
     "name": "Tall Llarg",
-    "parts":[
-        {
-            "name": "Tall",
-            "duration": 20,
-            "availableEmployees": ["Gemma", "Marissa"]
-        }
+    "parts": [
+      {
+        "name": "Tall",
+        "duration": [20],
+        "availableEmployees": ["Gemma", "Marissa"]
+      }
     ]
   },
   {
     "name": "Tall Curt",
-    "parts":[
-        {
-            "name": "Tall",
-            "duration": 15,
-            "availableEmployees": ["Marissa", "Gemma"]
-        }
+    "parts": [
+      {
+        "name": "Tall",
+        "duration": [15],
+        "availableEmployees": ["Marissa", "Gemma"]
+      }
     ]
   },
   {
     "name": "Permanent",
-    "parts":[
-        {
-            "name": "Aplicació",
-            "duration": 20,
-            "availableEmployees": ["Marissa", "Ruth"]
-        },
-        {
-            "name": "Exposició",
-            "duration": 30,
-            "availableEmployees": []
-        },
-        {
-            "name" : "Neutralització",
-            "duration": 15,
-            "availableEmployees": ["Ruth"]
-        },
-        {
-            "name": "Finalització",
-            "duration": 30,
-            "availableEmployees": ["Marissa", "Ruth"]
-        }
+    "parts": [
+      {
+        "name": "Aplicació",
+        "duration": [20],
+        "availableEmployees": ["Marissa", "Ruth"]
+      },
+      {
+        "name": "Exposició",
+        "duration": [30],
+        "availableEmployees": []
+      },
+      {
+        "name": "Neutralització",
+        "duration": [15],
+        "availableEmployees": ["Ruth"]
+      },
+      {
+        "name": "Finalització",
+        "duration": [20, 30],
+        "availableEmployees": ["Marissa", "Ruth"]
+      }
     ]
   },
   {
     "name": "Softy Mood",
     "parts": [
-        {
-            "name": "Aplicacio",
-            "duration": 30,
-            "availableEmployees": ["Marissa", "Gemma", "Ruth"]
-        },
-        {
-            "name": "Exposició",
-            "duration": 30,
-            "availableEmployees": []
-        },
-        {
-            "name": "Planxat",
-            "duration": 60,
-            "availableEmployees": ["Ruth", "Gemma"]
-        },
-        {
-            "name": "Hidratació",
-            "duration": 15,
-            "availableEmployees": ["Ruth"]
-        },
-        {
-            "name": "Finalització",
-            "duration": 20,
-            "availableEmployees": ["Ruth", "Gemma"]
-        }
+      {
+        "name": "Aplicacio",
+        "duration": [30],
+        "availableEmployees": ["Marissa", "Gemma", "Ruth"]
+      },
+      {
+        "name": "Exposició",
+        "duration": [30],
+        "availableEmployees": []
+      },
+      {
+        "name": "Planxat",
+        "duration": [60],
+        "availableEmployees": ["Ruth", "Gemma"]
+      },
+      {
+        "name": "Hidratació",
+        "duration": [15],
+        "availableEmployees": ["Ruth"]
+      },
+      {
+        "name": "Finalització",
+        "duration": [20],
+        "availableEmployees": ["Ruth", "Gemma"]
+      }
     ]
   }
 ]

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import interactionPlugin from '@fullcalendar/interaction' // opcional: click y drag
+import caLocale from '@fullcalendar/core/locales/ca'
 
 function Calendari() {
   const [eventos, setEventos] = useState([
@@ -19,6 +20,7 @@ function Calendari() {
   return (
     <FullCalendar
       plugins={[dayGridPlugin, interactionPlugin]}
+      locale={caLocale}
       initialView='dayGridMonth'
       events={eventos}
       dateClick={handleDateClick}

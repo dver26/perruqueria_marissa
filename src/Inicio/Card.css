@@ -16,69 +16,14 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 12px;
 }
 
 .titulo {
   margin: 0;
+  text-align: center;
   font-size: 1.25rem;
   font-weight: 700;
   color: #2b2b2b;
-}
-
-.duracio-total {
-  background: #ffe3ea;
-  color: #b1315b;
-  font-weight: 600;
-  font-size: 0.85rem;
-  padding: 4px 10px;
-  border-radius: 999px;
-}
-
-.parts-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.part {
-  background: #faf9f8;
-  border-radius: 10px;
-  padding: 10px 12px;
-}
-
-.part-info {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.9rem;
-}
-
-.part-name {
-  color: #333;
-  font-weight: 500;
-}
-
-.part-duration {
-  color: #888;
-}
-
-.empleats {
-  margin-top: 6px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-
-.badge {
-  background: #e8f0fe;
-  color: #2b5fb8;
-  font-size: 0.75rem;
-  padding: 2px 8px;
-  border-radius: 999px;
 }

@@ -2,7 +2,7 @@ import Card from './Card'
 import { useAppContext } from '../utils/useAppContext'
 
 const CardGrid = () => {
-  const { state, dispatch } = useAppContext()
+  const { state } = useAppContext()
   return (
     <>
       <div className='container-grid'>
@@ -11,7 +11,9 @@ const CardGrid = () => {
             (sum, part) => sum + part.duration,
             0
           )
-          return <Card key={i} servei={servei} duracioTotal={duracioTotal} />
+          return (
+            <Card key={i} id={i} servei={servei} duracioTotal={duracioTotal} />
+          )
         })}
       </div>
     </>
