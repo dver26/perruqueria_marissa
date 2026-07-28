@@ -1,0 +1,134 @@
+/* Contenedor general */
+.fc {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Barra superior (mes, botones de navegación) */
+.fc .fc-toolbar {
+  margin-bottom: 20px;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d2d2d;
+  text-transform: capitalize;
+}
+
+/* Botones (Hoy, Anterior, Siguiente) */
+.fc .fc-button {
+  background-color: #6c63ff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.fc .fc-button:hover {
+  background-color: #574fd6;
+  transform: translateY(-1px);
+}
+
+.fc .fc-button:disabled {
+  background-color: #c9c6f7;
+}
+
+.fc .fc-button-active {
+  background-color: #4b43c9 !important;
+}
+
+/* Cabecera de días de la semana */
+.fc .fc-col-header-cell {
+  background-color: #f7f7fb;
+  padding: 10px 0;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+/* Celdas de los días */
+.fc .fc-daygrid-day {
+  transition: background-color 0.15s ease;
+}
+
+.fc .fc-daygrid-day:hover {
+  background-color: #f4f3ff;
+  cursor: pointer;
+}
+
+/* Número del día */
+.fc .fc-daygrid-day-number {
+  padding: 6px 8px;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+/* Día de hoy */
+.fc .fc-day-today {
+  background-color: #eeecff !important;
+}
+
+.celda-dia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.numero-dia {
+  padding: 6px 8px;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.numero-dia.es-hoy {
+  background-color: var(--color-primary);
+  color: black;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+/* Eventos */
+.fc .fc-daygrid-event {
+  background-color: #6c63ff;
+  border: none;
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+  margin-top: 2px;
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  transition: transform 0.1s ease;
+}
+
+.fc .fc-daygrid-event:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+/* Bordes generales más suaves */
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border-color: #ececf5;
+}
+
+.fc-theme-standard .fc-scrollgrid {
+  border-color: #ececf5;
+  border-radius: 12px;
+  overflow: hidden;
+}

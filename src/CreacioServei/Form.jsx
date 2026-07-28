@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useAppContext } from '../utils/useAppContext' // ajusta la ruta a la tuya
+import { useAppContext } from '../utils/useAppContext'
 import styles from './Form.module.css'
 
 export default function DuracioForm() {
@@ -11,11 +11,6 @@ export default function DuracioForm() {
 
   // duracionsTriades: { [partName]: duracioSeleccionada }
   const [duracionsTriades, setDuracionsTriades] = useState({})
-  const servei = state.serveiEscollit
-
-  //   if (!servei) {
-  //     return <p className={styles.avis}>Selecciona un servei primer.</p>
-  //   }
 
   const handleCanvi = (partName, valor) => {
     setDuracionsTriades((prev) => ({
@@ -26,20 +21,26 @@ export default function DuracioForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+
+    const duracionsCompletes = {}
+    serveis[serveiEscollit].parts.forEach((part) => {
+      duracionsCompletes[part.name] =
+        duracionsTriades[part.name] ?? part.duration[0]
+    })
+
+    console.log(duracionsCompletes)
+
     dispatch({
-      type: 'SET_DURACIONS_SERVEI',
-      payload: {
-        servei: servei.name,
-        duracions: duracionsTriades
-      }
+      type: 'BUSCAR_ESPAI',
+      payload: { pantalla: 'buscar_espai', duracions: duracionsCompletes }
     })
   }
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
-      <h3>{servei.name}</h3>
+      <h3>{serveiEscollit.name}</h3>
 
-      {serveis[servei].parts.map((part) => (
+      {serveis[serveiEscollit].parts.map((part) => (
         <div className={styles.parteGroup} key={part.name}>
           <label htmlFor={part.name}>{part.name}</label>
 

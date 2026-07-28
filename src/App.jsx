@@ -3,6 +3,7 @@ import './App.css'
 
 import CardGrid from './Inicio/CardGrid.jsx'
 import PantallaParts from './CreacioServei/PantallaParts.jsx'
+import BuscarEspai from './BuscarEspai/BuscarEspai.jsx'
 
 const App = () => {
   const { state } = useAppContext()
@@ -13,6 +14,8 @@ const App = () => {
         return <CardGrid />
       case 'escollir':
         return <PantallaParts />
+      case 'buscar_espai':
+        return <BuscarEspai />
     }
   }
 

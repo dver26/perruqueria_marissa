@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "treballadora": "Marissa",
+    "data": "2026-07-29",
+    "inici": "09:00",
+    "fi": "09:45",
+    "servei": "Manicura"
+  },
+  {
+    "id": 2,
+    "treballadora": "Marissa",
+    "data": "2026-07-29",
+    "inici": "11:00",
+    "fi": "12:30",
+    "servei": "Massatge"
+  },
+  {
+    "id": 3,
+    "treballadora": "Gemma",
+    "data": "2026-07-29",
+    "inici": "10:00",
+    "fi": "11:00",
+    "servei": "Depilació"
+  },
+  {
+    "id": 4,
+    "treballadora": "Ruth",
+    "data": "2026-07-30",
+    "inici": "09:00",
+    "fi": "09:30",
+    "servei": "Cella i pestanyes"
+  },
+  {
+    "id": 5,
+    "treballadora": "Gemma",
+    "data": "2026-08-01",
+    "inici": "10:00",
+    "fi": "10:30",
+    "servei": "Manicura"
+  }
+]

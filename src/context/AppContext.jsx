@@ -13,6 +13,12 @@ function reducer(state, action) {
         pantalla: action.payload.pantalla,
         serveiEscollit: action.payload.serveiEscollit
       }
+    case 'BUSCAR_ESPAI':
+      return {
+        ...state,
+        pantalla: action.payload.pantalla,
+        duracions: action.payload.duracions
+      }
   }
 }
 
@@ -20,7 +26,8 @@ export function AppProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, {
     pantalla: 'inicio',
     serveis: serveis,
-    serveiEscollit: null
+    serveiEscollit: null,
+    duracions: null
   })
 
   return (

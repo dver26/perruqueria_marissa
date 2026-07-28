@@ -1,0 +1,127 @@
+[
+  {
+    "citaId": 1,
+    "data": "2026-07-29",
+    "servei": "Color",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "09:00",
+        "fi": "09:10"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "09:10",
+        "fi": "09:50"
+      },
+      {
+        "name": "Sellador i Rentat",
+        "treballadora": "Ruth",
+        "inici": "09:50",
+        "fi": "10:20"
+      }
+    ]
+  },
+  {
+    "citaId": 2,
+    "data": "2026-07-29",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "10:00",
+        "fi": "10:20"
+      }
+    ]
+  },
+  {
+    "citaId": 3,
+    "data": "2026-07-29",
+    "servei": "Pentinar",
+    "parts": [
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "11:00",
+        "fi": "11:10"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Marissa",
+        "inici": "11:10",
+        "fi": "11:40"
+      }
+    ]
+  },
+  {
+    "citaId": 4,
+    "data": "2026-07-30",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "09:00",
+        "fi": "09:20"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "09:20",
+        "fi": "09:50"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Ruth",
+        "inici": "09:50",
+        "fi": "10:05"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Ruth",
+        "inici": "10:05",
+        "fi": "10:25"
+      }
+    ]
+  },
+  {
+    "citaId": 5,
+    "data": "2026-08-01",
+    "servei": "Softy Mood",
+    "parts": [
+      {
+        "name": "Aplicacio",
+        "treballadora": "Gemma",
+        "inici": "10:00",
+        "fi": "10:30"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:30",
+        "fi": "11:00"
+      },
+      {
+        "name": "Planxat",
+        "treballadora": "Gemma",
+        "inici": "11:00",
+        "fi": "12:00"
+      },
+      {
+        "name": "Hidratació",
+        "treballadora": "Ruth",
+        "inici": "12:00",
+        "fi": "12:15"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Gemma",
+        "inici": "12:15",
+        "fi": "12:35"
+      }
+    ]
+  }
+]
