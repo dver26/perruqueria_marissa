@@ -1,6 +1,8 @@
 // context/AppContext.jsx
 import { createContext, useReducer } from 'react'
 import serveis from '../../serveis.json'
+import events from '../../events.json'
+import horaris from '../../horaris.json'
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const AppContext = createContext()
@@ -19,6 +21,12 @@ function reducer(state, action) {
         pantalla: action.payload.pantalla,
         duracions: action.payload.duracions
       }
+    case 'VISOR_DIA':
+      return {
+        ...state,
+        pantalla: action.payload.pantalla,
+        data: action.payload.data
+      }
   }
 }
 
@@ -27,7 +35,9 @@ export function AppProvider({ children }) {
     pantalla: 'inicio',
     serveis: serveis,
     serveiEscollit: null,
-    duracions: null
+    duracions: null,
+    events,
+    horaris
   })
 
   return (

@@ -1,0 +1,144 @@
+.visor-dia {
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+}
+
+.visor-dia-buit {
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+.visor-capçalera {
+  display: flex;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 6px;
+}
+
+.eix-hores-capçalera {
+  width: 56px;
+  flex-shrink: 0;
+}
+
+.columna-capçalera {
+  flex: 1;
+  min-width: 120px;
+  padding: 0.6rem 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #111827;
+  text-align: center;
+  border-left: 1px solid #f3f4f6;
+}
+
+.visor-cos {
+  position: relative;
+  display: flex;
+}
+
+.eix-hores {
+  position: relative;
+  width: 56px;
+  flex-shrink: 0;
+}
+
+.marca-hora {
+  position: absolute;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  color: #9ca3af;
+  font-variant-numeric: tabular-nums;
+  right: 8px;
+}
+
+.columnes-treballadors {
+  display: flex;
+  flex: 1;
+}
+
+.columna-treballadora {
+  position: relative;
+  flex: 1;
+  min-width: 120px;
+  border-left: 1px solid #f3f4f6;
+}
+
+.linia-hora {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #f3f4f6;
+}
+
+.bloc {
+  position: absolute;
+  border-radius: 6px;
+  border-left: 3px solid;
+  padding: 3px 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.bloc-hores {
+  font-size: 0.68rem;
+  font-weight: 600;
+  opacity: 0.75;
+  white-space: nowrap;
+}
+
+.bloc-servei {
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bloc-part {
+  font-size: 0.7rem;
+  opacity: 0.85;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Capa d'exposicions: creua totes les columnes, sense ser-ne una */
+.capa-exposicions {
+  position: absolute;
+  top: 0;
+  left: 56px;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.bloc-exposicio {
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  border: 1.5px dashed;
+  border-radius: 6px;
+  background: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.015),
+    rgba(0, 0, 0, 0.015) 6px,
+    transparent 6px,
+    transparent 12px
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+  pointer-events: auto;
+}
+
+.bloc-exposicio .bloc-servei {
+  font-style: italic;
+  font-weight: 500;
+}

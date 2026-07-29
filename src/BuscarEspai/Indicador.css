@@ -1,0 +1,14 @@
+.rodona{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+.lliure{
+    background-color: rgb(34, 232, 34);
+}
+
+.plena{
+    background-color: red;
+}

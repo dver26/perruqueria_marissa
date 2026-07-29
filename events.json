@@ -123,5 +123,49 @@
         "fi": "12:35"
       }
     ]
-  }
+  },
+  {
+  "citaId": 6,
+  "data": "2026-07-29",
+  "servei": "Manicura",
+  "parts": [
+    {
+      "name": "Preparació",
+      "treballadora": "Gemma",
+      "inici": "12:00",
+      "fi": "12:15"
+    },
+    {
+      "name": "Esmalt",
+      "treballadora": "Gemma",
+      "inici": "12:15",
+      "fi": "12:45"
+    }
+  ]
+},
+{
+  "citaId": 7,
+  "data": "2026-07-29",
+  "servei": "Tint Arrels",
+  "parts": [
+    {
+      "name": "Aplicació",
+      "treballadora": "Ruth",
+      "inici": "12:00",
+      "fi": "12:20"
+    },
+    {
+      "name": "Exposició",
+      "treballadora": null,
+      "inici": "12:20",
+      "fi": "12:50"
+    },
+    {
+      "name": "Rentat",
+      "treballadora": "Ruth",
+      "inici": "12:50",
+      "fi": "13:05"
+    }
+  ]
+}
 ]
