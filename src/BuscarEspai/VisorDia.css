@@ -142,3 +142,36 @@
   font-style: italic;
   font-weight: 500;
 }
+
+.btn-tornar {
+  width: 7rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  margin-bottom: 12px;
+  background-color: #ffffff;
+  border: 1px solid #d6c9f0;
+  border-radius: 8px;
+  color: #6a4fb6;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-tornar:hover {
+  background-color: #f3eefc;
+  border-color: #a889e0;
+}
+
+.btn-tornar:active {
+  background-color: #e9dffa;
+}
+
+.btn-tornar__icon {
+  width: 16px;
+  height: 16px;
+}

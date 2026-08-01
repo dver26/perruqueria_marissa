@@ -58,8 +58,15 @@ const assignaCarrils = (blocs) => {
 }
 
 const VisorDia = ({ data: dataProps }) => {
-  const { state } = useAppContext()
+  const { state, dispatch } = useAppContext()
   const { events } = state
+
+  const handleTornar = () => {
+    dispatch({
+      type: 'CAMBIAR_PANTALLA',
+      payload: { pantalla: 'inicio', serveiEscollit: null }
+    })
+  }
 
   if (!dataProps) return null
 
@@ -80,7 +87,26 @@ const VisorDia = ({ data: dataProps }) => {
     )
 
   if (totesFranges.length === 0) {
-    return <div className='visor-dia-buit'>No hi ha cites aquest dia</div>
+    return (
+      <>
+        <button className='btn-tornar' type='button' onClick={handleTornar}>
+          <svg
+            className='btn-tornar__icon'
+            viewBox='0 0 24 24'
+            fill='none'
+            stroke='currentColor'
+            strokeWidth='2'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+          >
+            <path d='M19 12H5' />
+            <path d='M12 19l-7-7 7-7' />
+          </svg>
+          Tornar
+        </button>
+        <div className='visor-dia-buit'>No hi ha cites aquest dia</div>
+      </>
+    )
   }
 
   // Les franges "d'exposició" (sense treballadora) no formen columna pròpia:
@@ -103,6 +129,21 @@ const VisorDia = ({ data: dataProps }) => {
 
   return (
     <div className='visor-dia'>
+      <button className='btn-tornar' type='button' onClick={handleTornar}>
+        <svg
+          className='btn-tornar__icon'
+          viewBox='0 0 24 24'
+          fill='none'
+          stroke='currentColor'
+          strokeWidth='2'
+          strokeLinecap='round'
+          strokeLinejoin='round'
+        >
+          <path d='M19 12H5' />
+          <path d='M12 19l-7-7 7-7' />
+        </svg>
+        Tornar
+      </button>
       <div className='visor-capçalera'>
         <div className='eix-hores-capçalera' />
         {treballadores.map((nom) => (
