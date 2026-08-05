@@ -2,7 +2,7 @@ import { useAppContext } from '../utils/useAppContext'
 import './VisorDia.css'
 
 const PX_PER_MIN = 2.4
-const MARGE_SUPERIOR = 14 // evita que la primera marca d'hora quedi tapada
+const MARGE_SUPERIOR = 14
 
 const PALETA = [
   { bg: '#eff6ff', border: '#3b82f6', text: '#1e40af' },

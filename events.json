@@ -125,47 +125,4562 @@
     ]
   },
   {
-  "citaId": 6,
-  "data": "2026-07-29",
-  "servei": "Manicura",
-  "parts": [
-    {
-      "name": "Preparació",
-      "treballadora": "Gemma",
-      "inici": "12:00",
-      "fi": "12:15"
-    },
-    {
-      "name": "Esmalt",
-      "treballadora": "Gemma",
-      "inici": "12:15",
-      "fi": "12:45"
-    }
-  ]
-},
-{
-  "citaId": 7,
-  "data": "2026-07-29",
-  "servei": "Tint Arrels",
-  "parts": [
-    {
-      "name": "Aplicació",
-      "treballadora": "Ruth",
-      "inici": "12:00",
-      "fi": "12:20"
-    },
-    {
-      "name": "Exposició",
-      "treballadora": null,
-      "inici": "12:20",
-      "fi": "12:50"
-    },
-    {
-      "name": "Rentat",
-      "treballadora": "Ruth",
-      "inici": "12:50",
-      "fi": "13:05"
-    }
-  ]
-}
+    "citaId": 6,
+    "data": "2026-07-29",
+    "servei": "Manicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Gemma",
+        "inici": "12:00",
+        "fi": "12:15"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Gemma",
+        "inici": "12:15",
+        "fi": "12:45"
+      }
+    ]
+  },
+  {
+    "citaId": 7,
+    "data": "2026-07-29",
+    "servei": "Tint Arrels",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "12:00",
+        "fi": "12:20"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "12:20",
+        "fi": "12:50"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "12:50",
+        "fi": "13:05"
+      }
+    ]
+  },
+  {
+    "citaId": 8,
+    "data": "2026-08-01",
+    "servei": "Color",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "11:35",
+        "fi": "11:45"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:45",
+        "fi": "12:25"
+      },
+      {
+        "name": "Sellador i Rentat",
+        "treballadora": "Ruth",
+        "inici": "12:25",
+        "fi": "12:55"
+      }
+    ]
+  },
+  {
+    "citaId": 9,
+    "data": "2026-08-01",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "08:15",
+        "fi": "08:55"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "08:55",
+        "fi": "09:25"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "09:25",
+        "fi": "09:40"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "09:40",
+        "fi": "10:00"
+      }
+    ]
+  },
+  {
+    "citaId": 10,
+    "data": "2026-08-01",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "10:00",
+        "fi": "10:40"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:40",
+        "fi": "11:10"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "11:10",
+        "fi": "11:25"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "11:25",
+        "fi": "11:45"
+      }
+    ]
+  },
+  {
+    "citaId": 11,
+    "data": "2026-08-04",
+    "servei": "Manicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Ruth",
+        "inici": "16:45",
+        "fi": "17:00"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Ruth",
+        "inici": "17:00",
+        "fi": "17:30"
+      }
+    ]
+  },
+  {
+    "citaId": 12,
+    "data": "2026-08-04",
+    "servei": "Tall Curt",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "09:55",
+        "fi": "10:10"
+      }
+    ]
+  },
+  {
+    "citaId": 13,
+    "data": "2026-08-04",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "10:15",
+        "fi": "10:55"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:55",
+        "fi": "11:25"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "11:25",
+        "fi": "11:40"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "11:40",
+        "fi": "12:00"
+      }
+    ]
+  },
+  {
+    "citaId": 14,
+    "data": "2026-08-05",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "13:50",
+        "fi": "14:10"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "14:10",
+        "fi": "14:40"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Marissa",
+        "inici": "14:40",
+        "fi": "14:55"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Marissa",
+        "inici": "14:55",
+        "fi": "15:15"
+      }
+    ]
+  },
+  {
+    "citaId": 15,
+    "data": "2026-08-05",
+    "servei": "Tinte Complet",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "15:50",
+        "fi": "16:20"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "16:20",
+        "fi": "17:00"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "17:00",
+        "fi": "17:20"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Gemma",
+        "inici": "17:20",
+        "fi": "17:45"
+      }
+    ]
+  },
+  {
+    "citaId": 16,
+    "data": "2026-08-05",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "10:20",
+        "fi": "10:40"
+      }
+    ]
+  },
+  {
+    "citaId": 17,
+    "data": "2026-08-06",
+    "servei": "Tint Arrels",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "18:25",
+        "fi": "18:45"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "18:45",
+        "fi": "19:15"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "19:15",
+        "fi": "19:30"
+      }
+    ]
+  },
+  {
+    "citaId": 18,
+    "data": "2026-08-06",
+    "servei": "Color",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "10:40",
+        "fi": "10:50"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:50",
+        "fi": "11:30"
+      },
+      {
+        "name": "Sellador i Rentat",
+        "treballadora": "Ruth",
+        "inici": "11:30",
+        "fi": "12:00"
+      }
+    ]
+  },
+  {
+    "citaId": 19,
+    "data": "2026-08-06",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "15:50",
+        "fi": "16:10"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "16:10",
+        "fi": "16:40"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Ruth",
+        "inici": "16:40",
+        "fi": "16:55"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Ruth",
+        "inici": "16:55",
+        "fi": "17:15"
+      }
+    ]
+  },
+  {
+    "citaId": 20,
+    "data": "2026-08-06",
+    "servei": "Tall Curt",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "10:15",
+        "fi": "10:30"
+      }
+    ]
+  },
+  {
+    "citaId": 21,
+    "data": "2026-08-06",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "15:55",
+        "fi": "16:35"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "16:35",
+        "fi": "17:05"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "17:05",
+        "fi": "17:20"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "17:20",
+        "fi": "17:40"
+      }
+    ]
+  },
+  {
+    "citaId": 22,
+    "data": "2026-08-06",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "11:15",
+        "fi": "11:35"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:35",
+        "fi": "12:05"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Gemma",
+        "inici": "12:05",
+        "fi": "12:20"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Gemma",
+        "inici": "12:20",
+        "fi": "12:40"
+      }
+    ]
+  },
+  {
+    "citaId": 23,
+    "data": "2026-08-07",
+    "servei": "Pedicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Marissa",
+        "inici": "18:10",
+        "fi": "18:25"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Marissa",
+        "inici": "18:25",
+        "fi": "18:55"
+      }
+    ]
+  },
+  {
+    "citaId": 24,
+    "data": "2026-08-07",
+    "servei": "Tall Curt",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Ruth",
+        "inici": "16:15",
+        "fi": "16:30"
+      }
+    ]
+  },
+  {
+    "citaId": 25,
+    "data": "2026-08-07",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Ruth",
+        "inici": "10:10",
+        "fi": "10:30"
+      }
+    ]
+  },
+  {
+    "citaId": 26,
+    "data": "2026-08-07",
+    "servei": "Softy Mood",
+    "parts": [
+      {
+        "name": "Aplicacio",
+        "treballadora": "Marissa",
+        "inici": "11:25",
+        "fi": "11:55"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:55",
+        "fi": "12:25"
+      },
+      {
+        "name": "Planxat",
+        "treballadora": "Marissa",
+        "inici": "12:25",
+        "fi": "13:25"
+      },
+      {
+        "name": "Hidratació",
+        "treballadora": "Ruth",
+        "inici": "13:25",
+        "fi": "13:40"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Marissa",
+        "inici": "13:40",
+        "fi": "14:00"
+      }
+    ]
+  },
+  {
+    "citaId": 27,
+    "data": "2026-08-07",
+    "servei": "Manicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Marissa",
+        "inici": "10:15",
+        "fi": "10:30"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Marissa",
+        "inici": "10:30",
+        "fi": "11:00"
+      }
+    ]
+  },
+  {
+    "citaId": 28,
+    "data": "2026-08-07",
+    "servei": "Pedicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Gemma",
+        "inici": "14:40",
+        "fi": "14:55"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Gemma",
+        "inici": "14:55",
+        "fi": "15:25"
+      }
+    ]
+  },
+  {
+    "citaId": 29,
+    "data": "2026-08-08",
+    "servei": "Pentinar",
+    "parts": [
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "09:20",
+        "fi": "09:30"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Ruth",
+        "inici": "09:30",
+        "fi": "10:00"
+      }
+    ]
+  },
+  {
+    "citaId": 30,
+    "data": "2026-08-08",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "10:05",
+        "fi": "10:45"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:45",
+        "fi": "11:15"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "11:15",
+        "fi": "11:30"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "11:30",
+        "fi": "11:50"
+      }
+    ]
+  },
+  {
+    "citaId": 31,
+    "data": "2026-08-08",
+    "servei": "Tinte Complet",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "08:00",
+        "fi": "08:30"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "08:30",
+        "fi": "09:10"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "09:10",
+        "fi": "09:30"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Marissa",
+        "inici": "09:30",
+        "fi": "09:55"
+      }
+    ]
+  },
+  {
+    "citaId": 32,
+    "data": "2026-08-08",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "08:40",
+        "fi": "09:00"
+      }
+    ]
+  },
+  {
+    "citaId": 33,
+    "data": "2026-08-11",
+    "servei": "Manicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Gemma",
+        "inici": "11:15",
+        "fi": "11:30"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Gemma",
+        "inici": "11:30",
+        "fi": "12:00"
+      }
+    ]
+  },
+  {
+    "citaId": 34,
+    "data": "2026-08-11",
+    "servei": "Tall Curt",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "10:45",
+        "fi": "11:00"
+      }
+    ]
+  },
+  {
+    "citaId": 35,
+    "data": "2026-08-11",
+    "servei": "Tall Curt",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "09:30",
+        "fi": "09:45"
+      }
+    ]
+  },
+  {
+    "citaId": 36,
+    "data": "2026-08-12",
+    "servei": "Manicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Ruth",
+        "inici": "16:45",
+        "fi": "17:00"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Ruth",
+        "inici": "17:00",
+        "fi": "17:30"
+      }
+    ]
+  },
+  {
+    "citaId": 37,
+    "data": "2026-08-12",
+    "servei": "Color",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "10:00",
+        "fi": "10:10"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:10",
+        "fi": "10:50"
+      },
+      {
+        "name": "Sellador i Rentat",
+        "treballadora": "Ruth",
+        "inici": "10:50",
+        "fi": "11:20"
+      }
+    ]
+  },
+  {
+    "citaId": 38,
+    "data": "2026-08-12",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "13:30",
+        "fi": "13:50"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "13:50",
+        "fi": "14:20"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Ruth",
+        "inici": "14:20",
+        "fi": "14:35"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Ruth",
+        "inici": "14:35",
+        "fi": "14:55"
+      }
+    ]
+  },
+  {
+    "citaId": 39,
+    "data": "2026-08-12",
+    "servei": "Pentinar",
+    "parts": [
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "09:45",
+        "fi": "09:55"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Ruth",
+        "inici": "09:55",
+        "fi": "10:25"
+      }
+    ]
+  },
+  {
+    "citaId": 40,
+    "data": "2026-08-12",
+    "servei": "Tall Curt",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "12:20",
+        "fi": "12:35"
+      }
+    ]
+  },
+  {
+    "citaId": 41,
+    "data": "2026-08-12",
+    "servei": "Color",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "10:30",
+        "fi": "10:40"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:40",
+        "fi": "11:20"
+      },
+      {
+        "name": "Sellador i Rentat",
+        "treballadora": "Marissa",
+        "inici": "11:20",
+        "fi": "11:50"
+      }
+    ]
+  },
+  {
+    "citaId": 42,
+    "data": "2026-08-13",
+    "servei": "Pentinar",
+    "parts": [
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "16:45",
+        "fi": "16:55"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Marissa",
+        "inici": "16:55",
+        "fi": "17:25"
+      }
+    ]
+  },
+  {
+    "citaId": 43,
+    "data": "2026-08-13",
+    "servei": "Tall Curt",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Ruth",
+        "inici": "10:35",
+        "fi": "10:50"
+      }
+    ]
+  },
+  {
+    "citaId": 44,
+    "data": "2026-08-13",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "09:15",
+        "fi": "09:35"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "09:35",
+        "fi": "10:05"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Marissa",
+        "inici": "10:05",
+        "fi": "10:20"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Marissa",
+        "inici": "10:20",
+        "fi": "10:40"
+      }
+    ]
+  },
+  {
+    "citaId": 45,
+    "data": "2026-08-14",
+    "servei": "Color",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "10:55",
+        "fi": "11:05"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:05",
+        "fi": "11:45"
+      },
+      {
+        "name": "Sellador i Rentat",
+        "treballadora": "Gemma",
+        "inici": "11:45",
+        "fi": "12:15"
+      }
+    ]
+  },
+  {
+    "citaId": 46,
+    "data": "2026-08-14",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "11:05",
+        "fi": "11:25"
+      }
+    ]
+  },
+  {
+    "citaId": 47,
+    "data": "2026-08-14",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "12:15",
+        "fi": "12:35"
+      }
+    ]
+  },
+  {
+    "citaId": 48,
+    "data": "2026-08-14",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Ruth",
+        "inici": "11:10",
+        "fi": "11:30"
+      }
+    ]
+  },
+  {
+    "citaId": 49,
+    "data": "2026-08-14",
+    "servei": "Tinte Complet",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "13:50",
+        "fi": "14:20"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "14:20",
+        "fi": "15:00"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "15:00",
+        "fi": "15:20"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Ruth",
+        "inici": "15:20",
+        "fi": "15:45"
+      }
+    ]
+  },
+  {
+    "citaId": 50,
+    "data": "2026-08-15",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "08:45",
+        "fi": "09:05"
+      }
+    ]
+  },
+  {
+    "citaId": 51,
+    "data": "2026-08-15",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "11:00",
+        "fi": "11:40"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:40",
+        "fi": "12:10"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "12:10",
+        "fi": "12:25"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "12:25",
+        "fi": "12:45"
+      }
+    ]
+  },
+  {
+    "citaId": 52,
+    "data": "2026-08-15",
+    "servei": "Pentinar",
+    "parts": [
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "11:30",
+        "fi": "11:40"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Ruth",
+        "inici": "11:40",
+        "fi": "12:10"
+      }
+    ]
+  },
+  {
+    "citaId": 53,
+    "data": "2026-08-15",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "13:10",
+        "fi": "13:50"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "13:50",
+        "fi": "14:20"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "14:20",
+        "fi": "14:35"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "14:35",
+        "fi": "14:55"
+      }
+    ]
+  },
+  {
+    "citaId": 54,
+    "data": "2026-08-15",
+    "servei": "Softy Mood",
+    "parts": [
+      {
+        "name": "Aplicacio",
+        "treballadora": "Ruth",
+        "inici": "08:50",
+        "fi": "09:20"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "09:20",
+        "fi": "09:50"
+      },
+      {
+        "name": "Planxat",
+        "treballadora": "Ruth",
+        "inici": "09:50",
+        "fi": "10:50"
+      },
+      {
+        "name": "Hidratació",
+        "treballadora": "Ruth",
+        "inici": "10:50",
+        "fi": "11:05"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Ruth",
+        "inici": "11:05",
+        "fi": "11:25"
+      }
+    ]
+  },
+  {
+    "citaId": 55,
+    "data": "2026-08-18",
+    "servei": "Tinte Complet",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "09:45",
+        "fi": "10:15"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:15",
+        "fi": "10:55"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "10:55",
+        "fi": "11:15"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Gemma",
+        "inici": "11:15",
+        "fi": "11:40"
+      }
+    ]
+  },
+  {
+    "citaId": 56,
+    "data": "2026-08-18",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "14:10",
+        "fi": "14:30"
+      }
+    ]
+  },
+  {
+    "citaId": 57,
+    "data": "2026-08-18",
+    "servei": "Manicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Ruth",
+        "inici": "11:30",
+        "fi": "11:45"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Ruth",
+        "inici": "11:45",
+        "fi": "12:15"
+      }
+    ]
+  },
+  {
+    "citaId": 58,
+    "data": "2026-08-18",
+    "servei": "Pentinar",
+    "parts": [
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "09:55",
+        "fi": "10:05"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Marissa",
+        "inici": "10:05",
+        "fi": "10:35"
+      }
+    ]
+  },
+  {
+    "citaId": 59,
+    "data": "2026-08-19",
+    "servei": "Tint Arrels",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "15:50",
+        "fi": "16:10"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "16:10",
+        "fi": "16:40"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "16:40",
+        "fi": "16:55"
+      }
+    ]
+  },
+  {
+    "citaId": 60,
+    "data": "2026-08-19",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "11:20",
+        "fi": "11:40"
+      }
+    ]
+  },
+  {
+    "citaId": 61,
+    "data": "2026-08-19",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "11:25",
+        "fi": "11:45"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:45",
+        "fi": "12:15"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Ruth",
+        "inici": "12:15",
+        "fi": "12:30"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Ruth",
+        "inici": "12:30",
+        "fi": "12:50"
+      }
+    ]
+  },
+  {
+    "citaId": 62,
+    "data": "2026-08-19",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "12:40",
+        "fi": "13:00"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "13:00",
+        "fi": "13:30"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Marissa",
+        "inici": "13:30",
+        "fi": "13:45"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Marissa",
+        "inici": "13:45",
+        "fi": "14:05"
+      }
+    ]
+  },
+  {
+    "citaId": 63,
+    "data": "2026-08-19",
+    "servei": "Tinte Complet",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "09:20",
+        "fi": "09:50"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "09:50",
+        "fi": "10:30"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "10:30",
+        "fi": "10:50"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Ruth",
+        "inici": "10:50",
+        "fi": "11:15"
+      }
+    ]
+  },
+  {
+    "citaId": 64,
+    "data": "2026-08-20",
+    "servei": "Pedicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Marissa",
+        "inici": "17:15",
+        "fi": "17:30"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Marissa",
+        "inici": "17:30",
+        "fi": "18:00"
+      }
+    ]
+  },
+  {
+    "citaId": 65,
+    "data": "2026-08-20",
+    "servei": "Tinte Complet",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "09:30",
+        "fi": "10:00"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:00",
+        "fi": "10:40"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "10:40",
+        "fi": "11:00"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Marissa",
+        "inici": "11:00",
+        "fi": "11:25"
+      }
+    ]
+  },
+  {
+    "citaId": 66,
+    "data": "2026-08-20",
+    "servei": "Tint Arrels",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "15:30",
+        "fi": "15:50"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "15:50",
+        "fi": "16:20"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "16:20",
+        "fi": "16:35"
+      }
+    ]
+  },
+  {
+    "citaId": 67,
+    "data": "2026-08-20",
+    "servei": "Pedicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Ruth",
+        "inici": "12:10",
+        "fi": "12:25"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Ruth",
+        "inici": "12:25",
+        "fi": "12:55"
+      }
+    ]
+  },
+  {
+    "citaId": 68,
+    "data": "2026-08-20",
+    "servei": "Softy Mood",
+    "parts": [
+      {
+        "name": "Aplicacio",
+        "treballadora": "Gemma",
+        "inici": "16:10",
+        "fi": "16:40"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "16:40",
+        "fi": "17:10"
+      },
+      {
+        "name": "Planxat",
+        "treballadora": "Gemma",
+        "inici": "17:10",
+        "fi": "18:10"
+      },
+      {
+        "name": "Hidratació",
+        "treballadora": "Gemma",
+        "inici": "18:10",
+        "fi": "18:25"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Gemma",
+        "inici": "18:25",
+        "fi": "18:45"
+      }
+    ]
+  },
+  {
+    "citaId": 69,
+    "data": "2026-08-21",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "15:40",
+        "fi": "16:00"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "16:00",
+        "fi": "16:30"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Ruth",
+        "inici": "16:30",
+        "fi": "16:45"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Ruth",
+        "inici": "16:45",
+        "fi": "17:05"
+      }
+    ]
+  },
+  {
+    "citaId": 70,
+    "data": "2026-08-21",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "16:45",
+        "fi": "17:05"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "17:05",
+        "fi": "17:35"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Marissa",
+        "inici": "17:35",
+        "fi": "17:50"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Marissa",
+        "inici": "17:50",
+        "fi": "18:10"
+      }
+    ]
+  },
+  {
+    "citaId": 71,
+    "data": "2026-08-21",
+    "servei": "Manicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Gemma",
+        "inici": "09:45",
+        "fi": "10:00"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Gemma",
+        "inici": "10:00",
+        "fi": "10:30"
+      }
+    ]
+  },
+  {
+    "citaId": 72,
+    "data": "2026-08-21",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "09:20",
+        "fi": "09:40"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "09:40",
+        "fi": "10:10"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Marissa",
+        "inici": "10:10",
+        "fi": "10:25"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Marissa",
+        "inici": "10:25",
+        "fi": "10:45"
+      }
+    ]
+  },
+  {
+    "citaId": 73,
+    "data": "2026-08-21",
+    "servei": "Tint Arrels",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "13:25",
+        "fi": "13:45"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "13:45",
+        "fi": "14:15"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "14:15",
+        "fi": "14:30"
+      }
+    ]
+  },
+  {
+    "citaId": 74,
+    "data": "2026-08-22",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "11:00",
+        "fi": "11:20"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:20",
+        "fi": "11:50"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Ruth",
+        "inici": "11:50",
+        "fi": "12:05"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Ruth",
+        "inici": "12:05",
+        "fi": "12:25"
+      }
+    ]
+  },
+  {
+    "citaId": 75,
+    "data": "2026-08-22",
+    "servei": "Tint Arrels",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "11:10",
+        "fi": "11:30"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:30",
+        "fi": "12:00"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "12:00",
+        "fi": "12:15"
+      }
+    ]
+  },
+  {
+    "citaId": 76,
+    "data": "2026-08-22",
+    "servei": "Tint Arrels",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "08:05",
+        "fi": "08:25"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "08:25",
+        "fi": "08:55"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "08:55",
+        "fi": "09:10"
+      }
+    ]
+  },
+  {
+    "citaId": 77,
+    "data": "2026-08-25",
+    "servei": "Manicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Ruth",
+        "inici": "13:55",
+        "fi": "14:10"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Ruth",
+        "inici": "14:10",
+        "fi": "14:40"
+      }
+    ]
+  },
+  {
+    "citaId": 78,
+    "data": "2026-08-25",
+    "servei": "Pentinar",
+    "parts": [
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "09:35",
+        "fi": "09:45"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Gemma",
+        "inici": "09:45",
+        "fi": "10:15"
+      }
+    ]
+  },
+  {
+    "citaId": 79,
+    "data": "2026-08-25",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "11:30",
+        "fi": "11:50"
+      }
+    ]
+  },
+  {
+    "citaId": 80,
+    "data": "2026-08-25",
+    "servei": "Manicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Marissa",
+        "inici": "15:45",
+        "fi": "16:00"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Marissa",
+        "inici": "16:00",
+        "fi": "16:30"
+      }
+    ]
+  },
+  {
+    "citaId": 81,
+    "data": "2026-08-25",
+    "servei": "Tint Arrels",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "09:50",
+        "fi": "10:10"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:10",
+        "fi": "10:40"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "10:40",
+        "fi": "10:55"
+      }
+    ]
+  },
+  {
+    "citaId": 82,
+    "data": "2026-08-25",
+    "servei": "Tall Curt",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "10:40",
+        "fi": "10:55"
+      }
+    ]
+  },
+  {
+    "citaId": 83,
+    "data": "2026-08-26",
+    "servei": "Tinte Complet",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "10:05",
+        "fi": "10:35"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:35",
+        "fi": "11:15"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "11:15",
+        "fi": "11:35"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Ruth",
+        "inici": "11:35",
+        "fi": "12:00"
+      }
+    ]
+  },
+  {
+    "citaId": 84,
+    "data": "2026-08-26",
+    "servei": "Pentinar",
+    "parts": [
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "13:55",
+        "fi": "14:05"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Marissa",
+        "inici": "14:05",
+        "fi": "14:35"
+      }
+    ]
+  },
+  {
+    "citaId": 85,
+    "data": "2026-08-26",
+    "servei": "Softy Mood",
+    "parts": [
+      {
+        "name": "Aplicacio",
+        "treballadora": "Gemma",
+        "inici": "15:15",
+        "fi": "15:45"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "15:45",
+        "fi": "16:15"
+      },
+      {
+        "name": "Planxat",
+        "treballadora": "Gemma",
+        "inici": "16:15",
+        "fi": "17:15"
+      },
+      {
+        "name": "Hidratació",
+        "treballadora": "Gemma",
+        "inici": "17:15",
+        "fi": "17:30"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Gemma",
+        "inici": "17:30",
+        "fi": "17:50"
+      }
+    ]
+  },
+  {
+    "citaId": 86,
+    "data": "2026-08-27",
+    "servei": "Softy Mood",
+    "parts": [
+      {
+        "name": "Aplicacio",
+        "treballadora": "Gemma",
+        "inici": "09:35",
+        "fi": "10:05"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:05",
+        "fi": "10:35"
+      },
+      {
+        "name": "Planxat",
+        "treballadora": "Gemma",
+        "inici": "10:35",
+        "fi": "11:35"
+      },
+      {
+        "name": "Hidratació",
+        "treballadora": "Gemma",
+        "inici": "11:35",
+        "fi": "11:50"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Gemma",
+        "inici": "11:50",
+        "fi": "12:10"
+      }
+    ]
+  },
+  {
+    "citaId": 87,
+    "data": "2026-08-27",
+    "servei": "Softy Mood",
+    "parts": [
+      {
+        "name": "Aplicacio",
+        "treballadora": "Marissa",
+        "inici": "17:15",
+        "fi": "17:45"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "17:45",
+        "fi": "18:15"
+      },
+      {
+        "name": "Planxat",
+        "treballadora": "Marissa",
+        "inici": "18:15",
+        "fi": "19:15"
+      },
+      {
+        "name": "Hidratació",
+        "treballadora": "Marissa",
+        "inici": "19:15",
+        "fi": "19:30"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Marissa",
+        "inici": "19:30",
+        "fi": "19:50"
+      }
+    ]
+  },
+  {
+    "citaId": 88,
+    "data": "2026-08-27",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "16:20",
+        "fi": "17:00"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "17:00",
+        "fi": "17:30"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "17:30",
+        "fi": "17:45"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "17:45",
+        "fi": "18:05"
+      }
+    ]
+  },
+  {
+    "citaId": 89,
+    "data": "2026-08-28",
+    "servei": "Softy Mood",
+    "parts": [
+      {
+        "name": "Aplicacio",
+        "treballadora": "Gemma",
+        "inici": "16:20",
+        "fi": "16:50"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "16:50",
+        "fi": "17:20"
+      },
+      {
+        "name": "Planxat",
+        "treballadora": "Gemma",
+        "inici": "17:20",
+        "fi": "18:20"
+      },
+      {
+        "name": "Hidratació",
+        "treballadora": "Ruth",
+        "inici": "18:20",
+        "fi": "18:35"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Gemma",
+        "inici": "18:35",
+        "fi": "18:55"
+      }
+    ]
+  },
+  {
+    "citaId": 90,
+    "data": "2026-08-28",
+    "servei": "Color",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "16:55",
+        "fi": "17:05"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "17:05",
+        "fi": "17:45"
+      },
+      {
+        "name": "Sellador i Rentat",
+        "treballadora": "Marissa",
+        "inici": "17:45",
+        "fi": "18:15"
+      }
+    ]
+  },
+  {
+    "citaId": 91,
+    "data": "2026-08-28",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "14:30",
+        "fi": "15:10"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "15:10",
+        "fi": "15:40"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "15:40",
+        "fi": "15:55"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "15:55",
+        "fi": "16:15"
+      }
+    ]
+  },
+  {
+    "citaId": 92,
+    "data": "2026-08-28",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "15:55",
+        "fi": "16:15"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "16:15",
+        "fi": "16:45"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Marissa",
+        "inici": "16:45",
+        "fi": "17:00"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Marissa",
+        "inici": "17:00",
+        "fi": "17:20"
+      }
+    ]
+  },
+  {
+    "citaId": 93,
+    "data": "2026-08-28",
+    "servei": "Softy Mood",
+    "parts": [
+      {
+        "name": "Aplicacio",
+        "treballadora": "Marissa",
+        "inici": "10:00",
+        "fi": "10:30"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:30",
+        "fi": "11:00"
+      },
+      {
+        "name": "Planxat",
+        "treballadora": "Marissa",
+        "inici": "11:00",
+        "fi": "12:00"
+      },
+      {
+        "name": "Hidratació",
+        "treballadora": "Ruth",
+        "inici": "12:00",
+        "fi": "12:15"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Marissa",
+        "inici": "12:15",
+        "fi": "12:35"
+      }
+    ]
+  },
+  {
+    "citaId": 94,
+    "data": "2026-08-29",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "09:35",
+        "fi": "09:55"
+      }
+    ]
+  },
+  {
+    "citaId": 95,
+    "data": "2026-08-29",
+    "servei": "Pedicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Marissa",
+        "inici": "09:15",
+        "fi": "09:30"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Marissa",
+        "inici": "09:30",
+        "fi": "10:00"
+      }
+    ]
+  },
+  {
+    "citaId": 96,
+    "data": "2026-08-29",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "12:30",
+        "fi": "13:10"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "13:10",
+        "fi": "13:40"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "13:40",
+        "fi": "13:55"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "13:55",
+        "fi": "14:15"
+      }
+    ]
+  },
+  {
+    "citaId": 97,
+    "data": "2026-08-29",
+    "servei": "Softy Mood",
+    "parts": [
+      {
+        "name": "Aplicacio",
+        "treballadora": "Ruth",
+        "inici": "10:25",
+        "fi": "10:55"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:55",
+        "fi": "11:25"
+      },
+      {
+        "name": "Planxat",
+        "treballadora": "Ruth",
+        "inici": "11:25",
+        "fi": "12:25"
+      },
+      {
+        "name": "Hidratació",
+        "treballadora": "Ruth",
+        "inici": "12:25",
+        "fi": "12:40"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Ruth",
+        "inici": "12:40",
+        "fi": "13:00"
+      }
+    ]
+  },
+  {
+    "citaId": 98,
+    "data": "2026-08-29",
+    "servei": "Softy Mood",
+    "parts": [
+      {
+        "name": "Aplicacio",
+        "treballadora": "Marissa",
+        "inici": "10:25",
+        "fi": "10:55"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:55",
+        "fi": "11:25"
+      },
+      {
+        "name": "Planxat",
+        "treballadora": "Marissa",
+        "inici": "11:25",
+        "fi": "12:25"
+      },
+      {
+        "name": "Hidratació",
+        "treballadora": "Marissa",
+        "inici": "12:25",
+        "fi": "12:40"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Marissa",
+        "inici": "12:40",
+        "fi": "13:00"
+      }
+    ]
+  },
+  {
+    "citaId": 99,
+    "data": "2026-08-29",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "11:05",
+        "fi": "11:25"
+      }
+    ]
+  },
+  {
+    "citaId": 100,
+    "data": "2026-09-01",
+    "servei": "Tint Arrels",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "13:50",
+        "fi": "14:10"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "14:10",
+        "fi": "14:40"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "14:40",
+        "fi": "14:55"
+      }
+    ]
+  },
+  {
+    "citaId": 101,
+    "data": "2026-09-01",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "11:00",
+        "fi": "11:40"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:40",
+        "fi": "12:10"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "12:10",
+        "fi": "12:25"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Ruth",
+        "inici": "12:25",
+        "fi": "12:45"
+      }
+    ]
+  },
+  {
+    "citaId": 102,
+    "data": "2026-09-01",
+    "servei": "Pedicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Gemma",
+        "inici": "10:05",
+        "fi": "10:20"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Gemma",
+        "inici": "10:20",
+        "fi": "10:50"
+      }
+    ]
+  },
+  {
+    "citaId": 103,
+    "data": "2026-09-01",
+    "servei": "Tint Arrels",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "16:00",
+        "fi": "16:20"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "16:20",
+        "fi": "16:50"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "16:50",
+        "fi": "17:05"
+      }
+    ]
+  },
+  {
+    "citaId": 104,
+    "data": "2026-09-01",
+    "servei": "Tint Arrels",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "11:20",
+        "fi": "11:40"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:40",
+        "fi": "12:10"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "12:10",
+        "fi": "12:25"
+      }
+    ]
+  },
+  {
+    "citaId": 105,
+    "data": "2026-09-02",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "09:40",
+        "fi": "10:20"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:20",
+        "fi": "10:50"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "10:50",
+        "fi": "11:05"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Ruth",
+        "inici": "11:05",
+        "fi": "11:25"
+      }
+    ]
+  },
+  {
+    "citaId": 106,
+    "data": "2026-09-02",
+    "servei": "Tall Curt",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Ruth",
+        "inici": "15:55",
+        "fi": "16:10"
+      }
+    ]
+  },
+  {
+    "citaId": 107,
+    "data": "2026-09-02",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Ruth",
+        "inici": "15:35",
+        "fi": "15:55"
+      }
+    ]
+  },
+  {
+    "citaId": 108,
+    "data": "2026-09-03",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "09:55",
+        "fi": "10:15"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:15",
+        "fi": "10:45"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Ruth",
+        "inici": "10:45",
+        "fi": "11:00"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Ruth",
+        "inici": "11:00",
+        "fi": "11:20"
+      }
+    ]
+  },
+  {
+    "citaId": 109,
+    "data": "2026-09-03",
+    "servei": "Tint Arrels",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "15:50",
+        "fi": "16:10"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "16:10",
+        "fi": "16:40"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "16:40",
+        "fi": "16:55"
+      }
+    ]
+  },
+  {
+    "citaId": 110,
+    "data": "2026-09-03",
+    "servei": "Softy Mood",
+    "parts": [
+      {
+        "name": "Aplicacio",
+        "treballadora": "Marissa",
+        "inici": "16:15",
+        "fi": "16:45"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "16:45",
+        "fi": "17:15"
+      },
+      {
+        "name": "Planxat",
+        "treballadora": "Marissa",
+        "inici": "17:15",
+        "fi": "18:15"
+      },
+      {
+        "name": "Hidratació",
+        "treballadora": "Gemma",
+        "inici": "18:15",
+        "fi": "18:30"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Marissa",
+        "inici": "18:30",
+        "fi": "18:50"
+      }
+    ]
+  },
+  {
+    "citaId": 111,
+    "data": "2026-09-04",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "10:45",
+        "fi": "11:05"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:05",
+        "fi": "11:35"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Ruth",
+        "inici": "11:35",
+        "fi": "11:50"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Ruth",
+        "inici": "11:50",
+        "fi": "12:10"
+      }
+    ]
+  },
+  {
+    "citaId": 112,
+    "data": "2026-09-04",
+    "servei": "Pentinar",
+    "parts": [
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "11:35",
+        "fi": "11:45"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Marissa",
+        "inici": "11:45",
+        "fi": "12:15"
+      }
+    ]
+  },
+  {
+    "citaId": 113,
+    "data": "2026-09-04",
+    "servei": "Pedicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Gemma",
+        "inici": "16:40",
+        "fi": "16:55"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Gemma",
+        "inici": "16:55",
+        "fi": "17:25"
+      }
+    ]
+  },
+  {
+    "citaId": 114,
+    "data": "2026-09-04",
+    "servei": "Tall Curt",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "19:45",
+        "fi": "20:00"
+      }
+    ]
+  },
+  {
+    "citaId": 115,
+    "data": "2026-09-05",
+    "servei": "Tinte Complet",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "11:20",
+        "fi": "11:50"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:50",
+        "fi": "12:30"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "12:30",
+        "fi": "12:50"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Gemma",
+        "inici": "12:50",
+        "fi": "13:15"
+      }
+    ]
+  },
+  {
+    "citaId": 116,
+    "data": "2026-09-05",
+    "servei": "Tint Arrels",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "09:35",
+        "fi": "09:55"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "09:55",
+        "fi": "10:25"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "10:25",
+        "fi": "10:40"
+      }
+    ]
+  },
+  {
+    "citaId": 117,
+    "data": "2026-09-05",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "08:05",
+        "fi": "08:25"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "08:25",
+        "fi": "08:55"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Marissa",
+        "inici": "08:55",
+        "fi": "09:10"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Marissa",
+        "inici": "09:10",
+        "fi": "09:30"
+      }
+    ]
+  },
+  {
+    "citaId": 118,
+    "data": "2026-09-05",
+    "servei": "Pedicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Marissa",
+        "inici": "10:00",
+        "fi": "10:15"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Marissa",
+        "inici": "10:15",
+        "fi": "10:45"
+      }
+    ]
+  },
+  {
+    "citaId": 119,
+    "data": "2026-09-05",
+    "servei": "Pedicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Ruth",
+        "inici": "11:05",
+        "fi": "11:20"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Ruth",
+        "inici": "11:20",
+        "fi": "11:50"
+      }
+    ]
+  },
+  {
+    "citaId": 120,
+    "data": "2026-09-08",
+    "servei": "Pentinar",
+    "parts": [
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "16:10",
+        "fi": "16:20"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Marissa",
+        "inici": "16:20",
+        "fi": "16:50"
+      }
+    ]
+  },
+  {
+    "citaId": 121,
+    "data": "2026-09-08",
+    "servei": "Pentinar",
+    "parts": [
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "10:55",
+        "fi": "11:05"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Gemma",
+        "inici": "11:05",
+        "fi": "11:35"
+      }
+    ]
+  },
+  {
+    "citaId": 122,
+    "data": "2026-09-08",
+    "servei": "Pentinar",
+    "parts": [
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "16:55",
+        "fi": "17:05"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Ruth",
+        "inici": "17:05",
+        "fi": "17:35"
+      }
+    ]
+  },
+  {
+    "citaId": 123,
+    "data": "2026-09-08",
+    "servei": "Manicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Marissa",
+        "inici": "09:45",
+        "fi": "10:00"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Marissa",
+        "inici": "10:00",
+        "fi": "10:30"
+      }
+    ]
+  },
+  {
+    "citaId": 124,
+    "data": "2026-09-08",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "09:55",
+        "fi": "10:15"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:15",
+        "fi": "10:45"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Ruth",
+        "inici": "10:45",
+        "fi": "11:00"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Ruth",
+        "inici": "11:00",
+        "fi": "11:20"
+      }
+    ]
+  },
+  {
+    "citaId": 125,
+    "data": "2026-09-09",
+    "servei": "Color",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "15:45",
+        "fi": "15:55"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "15:55",
+        "fi": "16:35"
+      },
+      {
+        "name": "Sellador i Rentat",
+        "treballadora": "Gemma",
+        "inici": "16:35",
+        "fi": "17:05"
+      }
+    ]
+  },
+  {
+    "citaId": 126,
+    "data": "2026-09-09",
+    "servei": "Manicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Gemma",
+        "inici": "15:05",
+        "fi": "15:20"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Gemma",
+        "inici": "15:20",
+        "fi": "15:50"
+      }
+    ]
+  },
+  {
+    "citaId": 127,
+    "data": "2026-09-09",
+    "servei": "Pedicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Marissa",
+        "inici": "13:20",
+        "fi": "13:35"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Marissa",
+        "inici": "13:35",
+        "fi": "14:05"
+      }
+    ]
+  },
+  {
+    "citaId": 128,
+    "data": "2026-09-09",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "11:05",
+        "fi": "11:25"
+      }
+    ]
+  },
+  {
+    "citaId": 129,
+    "data": "2026-09-09",
+    "servei": "Tall Curt",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "12:20",
+        "fi": "12:35"
+      }
+    ]
+  },
+  {
+    "citaId": 130,
+    "data": "2026-09-09",
+    "servei": "Pentinar",
+    "parts": [
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "16:05",
+        "fi": "16:15"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Ruth",
+        "inici": "16:15",
+        "fi": "16:45"
+      }
+    ]
+  },
+  {
+    "citaId": 131,
+    "data": "2026-09-10",
+    "servei": "Pedicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Gemma",
+        "inici": "18:25",
+        "fi": "18:40"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Gemma",
+        "inici": "18:40",
+        "fi": "19:10"
+      }
+    ]
+  },
+  {
+    "citaId": 132,
+    "data": "2026-09-10",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Ruth",
+        "inici": "09:20",
+        "fi": "09:40"
+      }
+    ]
+  },
+  {
+    "citaId": 133,
+    "data": "2026-09-10",
+    "servei": "Manicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Marissa",
+        "inici": "16:30",
+        "fi": "16:45"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Marissa",
+        "inici": "16:45",
+        "fi": "17:15"
+      }
+    ]
+  },
+  {
+    "citaId": 134,
+    "data": "2026-09-10",
+    "servei": "Manicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Marissa",
+        "inici": "14:35",
+        "fi": "14:50"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Marissa",
+        "inici": "14:50",
+        "fi": "15:20"
+      }
+    ]
+  },
+  {
+    "citaId": 135,
+    "data": "2026-09-10",
+    "servei": "Tint Arrels",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "11:25",
+        "fi": "11:45"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:45",
+        "fi": "12:15"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "12:15",
+        "fi": "12:30"
+      }
+    ]
+  },
+  {
+    "citaId": 136,
+    "data": "2026-09-10",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "09:45",
+        "fi": "10:05"
+      }
+    ]
+  },
+  {
+    "citaId": 137,
+    "data": "2026-09-11",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "11:10",
+        "fi": "11:30"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:30",
+        "fi": "12:00"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Gemma",
+        "inici": "12:00",
+        "fi": "12:15"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Gemma",
+        "inici": "12:15",
+        "fi": "12:35"
+      }
+    ]
+  },
+  {
+    "citaId": 138,
+    "data": "2026-09-11",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "10:20",
+        "fi": "11:00"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:00",
+        "fi": "11:30"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "11:30",
+        "fi": "11:45"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "11:45",
+        "fi": "12:05"
+      }
+    ]
+  },
+  {
+    "citaId": 139,
+    "data": "2026-09-11",
+    "servei": "Color",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "14:15",
+        "fi": "14:25"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "14:25",
+        "fi": "15:05"
+      },
+      {
+        "name": "Sellador i Rentat",
+        "treballadora": "Marissa",
+        "inici": "15:05",
+        "fi": "15:35"
+      }
+    ]
+  },
+  {
+    "citaId": 140,
+    "data": "2026-09-11",
+    "servei": "Pentinar",
+    "parts": [
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "16:55",
+        "fi": "17:05"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Ruth",
+        "inici": "17:05",
+        "fi": "17:35"
+      }
+    ]
+  },
+  {
+    "citaId": 141,
+    "data": "2026-09-11",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Ruth",
+        "inici": "14:25",
+        "fi": "14:45"
+      }
+    ]
+  },
+  {
+    "citaId": 142,
+    "data": "2026-09-12",
+    "servei": "Tall Curt",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "13:30",
+        "fi": "13:45"
+      }
+    ]
+  },
+  {
+    "citaId": 143,
+    "data": "2026-09-12",
+    "servei": "Softy Mood",
+    "parts": [
+      {
+        "name": "Aplicacio",
+        "treballadora": "Marissa",
+        "inici": "10:35",
+        "fi": "11:05"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:05",
+        "fi": "11:35"
+      },
+      {
+        "name": "Planxat",
+        "treballadora": "Marissa",
+        "inici": "11:35",
+        "fi": "12:35"
+      },
+      {
+        "name": "Hidratació",
+        "treballadora": "Marissa",
+        "inici": "12:35",
+        "fi": "12:50"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Marissa",
+        "inici": "12:50",
+        "fi": "13:10"
+      }
+    ]
+  },
+  {
+    "citaId": 144,
+    "data": "2026-09-12",
+    "servei": "Tall Curt",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "14:25",
+        "fi": "14:40"
+      }
+    ]
+  },
+  {
+    "citaId": 145,
+    "data": "2026-09-15",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "16:00",
+        "fi": "16:20"
+      }
+    ]
+  },
+  {
+    "citaId": 146,
+    "data": "2026-09-15",
+    "servei": "Pedicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Ruth",
+        "inici": "14:20",
+        "fi": "14:35"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Ruth",
+        "inici": "14:35",
+        "fi": "15:05"
+      }
+    ]
+  },
+  {
+    "citaId": 147,
+    "data": "2026-09-15",
+    "servei": "Pedicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Marissa",
+        "inici": "11:55",
+        "fi": "12:10"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Marissa",
+        "inici": "12:10",
+        "fi": "12:40"
+      }
+    ]
+  },
+  {
+    "citaId": 148,
+    "data": "2026-09-15",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "10:35",
+        "fi": "10:55"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:55",
+        "fi": "11:25"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Gemma",
+        "inici": "11:25",
+        "fi": "11:40"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Gemma",
+        "inici": "11:40",
+        "fi": "12:00"
+      }
+    ]
+  },
+  {
+    "citaId": 149,
+    "data": "2026-09-16",
+    "servei": "Tinte Complet",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "09:50",
+        "fi": "10:20"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:20",
+        "fi": "11:00"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "11:00",
+        "fi": "11:20"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Ruth",
+        "inici": "11:20",
+        "fi": "11:45"
+      }
+    ]
+  },
+  {
+    "citaId": 150,
+    "data": "2026-09-16",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "10:20",
+        "fi": "10:40"
+      }
+    ]
+  },
+  {
+    "citaId": 151,
+    "data": "2026-09-16",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "13:30",
+        "fi": "14:10"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "14:10",
+        "fi": "14:40"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "14:40",
+        "fi": "14:55"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Ruth",
+        "inici": "14:55",
+        "fi": "15:15"
+      }
+    ]
+  },
+  {
+    "citaId": 152,
+    "data": "2026-09-16",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "11:00",
+        "fi": "11:40"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:40",
+        "fi": "12:10"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "12:10",
+        "fi": "12:25"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "12:25",
+        "fi": "12:45"
+      }
+    ]
+  },
+  {
+    "citaId": 153,
+    "data": "2026-09-16",
+    "servei": "Tinte Complet",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "16:05",
+        "fi": "16:35"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "16:35",
+        "fi": "17:15"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "17:15",
+        "fi": "17:35"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Gemma",
+        "inici": "17:35",
+        "fi": "18:00"
+      }
+    ]
+  },
+  {
+    "citaId": 154,
+    "data": "2026-09-17",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "17:15",
+        "fi": "17:35"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "17:35",
+        "fi": "18:05"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Gemma",
+        "inici": "18:05",
+        "fi": "18:20"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Gemma",
+        "inici": "18:20",
+        "fi": "18:40"
+      }
+    ]
+  },
+  {
+    "citaId": 155,
+    "data": "2026-09-17",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Ruth",
+        "inici": "09:25",
+        "fi": "09:45"
+      }
+    ]
+  },
+  {
+    "citaId": 156,
+    "data": "2026-09-17",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "10:05",
+        "fi": "10:25"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:25",
+        "fi": "10:55"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Marissa",
+        "inici": "10:55",
+        "fi": "11:10"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Marissa",
+        "inici": "11:10",
+        "fi": "11:30"
+      }
+    ]
+  },
+  {
+    "citaId": 157,
+    "data": "2026-09-17",
+    "servei": "Softy Mood",
+    "parts": [
+      {
+        "name": "Aplicacio",
+        "treballadora": "Ruth",
+        "inici": "14:20",
+        "fi": "14:50"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "14:50",
+        "fi": "15:20"
+      },
+      {
+        "name": "Planxat",
+        "treballadora": "Ruth",
+        "inici": "15:20",
+        "fi": "16:20"
+      },
+      {
+        "name": "Hidratació",
+        "treballadora": "Ruth",
+        "inici": "16:20",
+        "fi": "16:35"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Ruth",
+        "inici": "16:35",
+        "fi": "16:55"
+      }
+    ]
+  },
+  {
+    "citaId": 158,
+    "data": "2026-09-17",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "17:40",
+        "fi": "18:20"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "18:20",
+        "fi": "18:50"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "18:50",
+        "fi": "19:05"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "19:05",
+        "fi": "19:25"
+      }
+    ]
+  },
+  {
+    "citaId": 159,
+    "data": "2026-09-18",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "11:15",
+        "fi": "11:35"
+      }
+    ]
+  },
+  {
+    "citaId": 160,
+    "data": "2026-09-18",
+    "servei": "Pedicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Marissa",
+        "inici": "16:35",
+        "fi": "16:50"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Marissa",
+        "inici": "16:50",
+        "fi": "17:20"
+      }
+    ]
+  },
+  {
+    "citaId": 161,
+    "data": "2026-09-18",
+    "servei": "Manicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Marissa",
+        "inici": "09:20",
+        "fi": "09:35"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Marissa",
+        "inici": "09:35",
+        "fi": "10:05"
+      }
+    ]
+  },
+  {
+    "citaId": 162,
+    "data": "2026-09-18",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "11:00",
+        "fi": "11:40"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:40",
+        "fi": "12:10"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "12:10",
+        "fi": "12:25"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "12:25",
+        "fi": "12:45"
+      }
+    ]
+  },
+  {
+    "citaId": 163,
+    "data": "2026-09-18",
+    "servei": "Tinte Complet",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "16:15",
+        "fi": "16:45"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "16:45",
+        "fi": "17:25"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "17:25",
+        "fi": "17:45"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Gemma",
+        "inici": "17:45",
+        "fi": "18:10"
+      }
+    ]
+  },
+  {
+    "citaId": 164,
+    "data": "2026-09-19",
+    "servei": "Tinte Complet",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "09:25",
+        "fi": "09:55"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "09:55",
+        "fi": "10:35"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "10:35",
+        "fi": "10:55"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Gemma",
+        "inici": "10:55",
+        "fi": "11:20"
+      }
+    ]
+  },
+  {
+    "citaId": 165,
+    "data": "2026-09-19",
+    "servei": "Pedicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Marissa",
+        "inici": "11:15",
+        "fi": "11:30"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Marissa",
+        "inici": "11:30",
+        "fi": "12:00"
+      }
+    ]
+  },
+  {
+    "citaId": 166,
+    "data": "2026-09-19",
+    "servei": "Tall Curt",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "14:30",
+        "fi": "14:45"
+      }
+    ]
+  },
+  {
+    "citaId": 167,
+    "data": "2026-09-19",
+    "servei": "Pedicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Ruth",
+        "inici": "11:05",
+        "fi": "11:20"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Ruth",
+        "inici": "11:20",
+        "fi": "11:50"
+      }
+    ]
+  },
+  {
+    "citaId": 168,
+    "data": "2026-09-19",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "09:20",
+        "fi": "10:00"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:00",
+        "fi": "10:30"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "10:30",
+        "fi": "10:45"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "10:45",
+        "fi": "11:05"
+      }
+    ]
+  },
+  {
+    "citaId": 169,
+    "data": "2026-09-22",
+    "servei": "Tinte Complet",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "14:25",
+        "fi": "14:55"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "14:55",
+        "fi": "15:35"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "15:35",
+        "fi": "15:55"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Ruth",
+        "inici": "15:55",
+        "fi": "16:20"
+      }
+    ]
+  },
+  {
+    "citaId": 170,
+    "data": "2026-09-22",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "11:20",
+        "fi": "11:40"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:40",
+        "fi": "12:10"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Ruth",
+        "inici": "12:10",
+        "fi": "12:25"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Ruth",
+        "inici": "12:25",
+        "fi": "12:45"
+      }
+    ]
+  },
+  {
+    "citaId": 171,
+    "data": "2026-09-22",
+    "servei": "Pentinar",
+    "parts": [
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "10:00",
+        "fi": "10:10"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Gemma",
+        "inici": "10:10",
+        "fi": "10:40"
+      }
+    ]
+  },
+  {
+    "citaId": 172,
+    "data": "2026-09-23",
+    "servei": "Tinte Complet",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "09:55",
+        "fi": "10:25"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:25",
+        "fi": "11:05"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "11:05",
+        "fi": "11:25"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Marissa",
+        "inici": "11:25",
+        "fi": "11:50"
+      }
+    ]
+  },
+  {
+    "citaId": 173,
+    "data": "2026-09-23",
+    "servei": "Tall Curt",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Ruth",
+        "inici": "11:25",
+        "fi": "11:40"
+      }
+    ]
+  },
+  {
+    "citaId": 174,
+    "data": "2026-09-23",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "16:10",
+        "fi": "16:50"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "16:50",
+        "fi": "17:20"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "17:20",
+        "fi": "17:35"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Ruth",
+        "inici": "17:35",
+        "fi": "17:55"
+      }
+    ]
+  },
+  {
+    "citaId": 175,
+    "data": "2026-09-24",
+    "servei": "Tint Arrels",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "11:05",
+        "fi": "11:25"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:25",
+        "fi": "11:55"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "11:55",
+        "fi": "12:10"
+      }
+    ]
+  },
+  {
+    "citaId": 176,
+    "data": "2026-09-24",
+    "servei": "Pedicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Marissa",
+        "inici": "11:30",
+        "fi": "11:45"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Marissa",
+        "inici": "11:45",
+        "fi": "12:15"
+      }
+    ]
+  },
+  {
+    "citaId": 177,
+    "data": "2026-09-24",
+    "servei": "Manicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Gemma",
+        "inici": "10:15",
+        "fi": "10:30"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Gemma",
+        "inici": "10:30",
+        "fi": "11:00"
+      }
+    ]
+  },
+  {
+    "citaId": 178,
+    "data": "2026-09-24",
+    "servei": "Tall Llarg",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "19:25",
+        "fi": "19:45"
+      }
+    ]
+  },
+  {
+    "citaId": 179,
+    "data": "2026-09-24",
+    "servei": "Pentinar",
+    "parts": [
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "14:30",
+        "fi": "14:40"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Marissa",
+        "inici": "14:40",
+        "fi": "15:10"
+      }
+    ]
+  },
+  {
+    "citaId": 180,
+    "data": "2026-09-25",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "15:40",
+        "fi": "16:20"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "16:20",
+        "fi": "16:50"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "16:50",
+        "fi": "17:05"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "17:05",
+        "fi": "17:25"
+      }
+    ]
+  },
+  {
+    "citaId": 181,
+    "data": "2026-09-25",
+    "servei": "Tall Curt",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "09:05",
+        "fi": "09:20"
+      }
+    ]
+  },
+  {
+    "citaId": 182,
+    "data": "2026-09-25",
+    "servei": "Softy Mood",
+    "parts": [
+      {
+        "name": "Aplicacio",
+        "treballadora": "Ruth",
+        "inici": "11:30",
+        "fi": "12:00"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "12:00",
+        "fi": "12:30"
+      },
+      {
+        "name": "Planxat",
+        "treballadora": "Ruth",
+        "inici": "12:30",
+        "fi": "13:30"
+      },
+      {
+        "name": "Hidratació",
+        "treballadora": "Ruth",
+        "inici": "13:30",
+        "fi": "13:45"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Ruth",
+        "inici": "13:45",
+        "fi": "14:05"
+      }
+    ]
+  },
+  {
+    "citaId": 183,
+    "data": "2026-09-25",
+    "servei": "Softy Mood",
+    "parts": [
+      {
+        "name": "Aplicacio",
+        "treballadora": "Gemma",
+        "inici": "10:05",
+        "fi": "10:35"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:35",
+        "fi": "11:05"
+      },
+      {
+        "name": "Planxat",
+        "treballadora": "Gemma",
+        "inici": "11:05",
+        "fi": "12:05"
+      },
+      {
+        "name": "Hidratació",
+        "treballadora": "Ruth",
+        "inici": "12:05",
+        "fi": "12:20"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Gemma",
+        "inici": "12:20",
+        "fi": "12:40"
+      }
+    ]
+  },
+  {
+    "citaId": 184,
+    "data": "2026-09-25",
+    "servei": "Tall Curt",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Gemma",
+        "inici": "09:45",
+        "fi": "10:00"
+      }
+    ]
+  },
+  {
+    "citaId": 185,
+    "data": "2026-09-25",
+    "servei": "Softy Mood",
+    "parts": [
+      {
+        "name": "Aplicacio",
+        "treballadora": "Gemma",
+        "inici": "14:55",
+        "fi": "15:25"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "15:25",
+        "fi": "15:55"
+      },
+      {
+        "name": "Planxat",
+        "treballadora": "Gemma",
+        "inici": "15:55",
+        "fi": "16:55"
+      },
+      {
+        "name": "Hidratació",
+        "treballadora": "Gemma",
+        "inici": "16:55",
+        "fi": "17:10"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Gemma",
+        "inici": "17:10",
+        "fi": "17:30"
+      }
+    ]
+  },
+  {
+    "citaId": 186,
+    "data": "2026-09-26",
+    "servei": "Mèches",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "08:25",
+        "fi": "09:05"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "09:05",
+        "fi": "09:35"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Gemma",
+        "inici": "09:35",
+        "fi": "09:50"
+      },
+      {
+        "name": "Tall",
+        "treballadora": "Ruth",
+        "inici": "09:50",
+        "fi": "10:10"
+      }
+    ]
+  },
+  {
+    "citaId": 187,
+    "data": "2026-09-26",
+    "servei": "Tinte Complet",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Marissa",
+        "inici": "09:50",
+        "fi": "10:20"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:20",
+        "fi": "11:00"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Marissa",
+        "inici": "11:00",
+        "fi": "11:20"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Ruth",
+        "inici": "11:20",
+        "fi": "11:45"
+      }
+    ]
+  },
+  {
+    "citaId": 188,
+    "data": "2026-09-26",
+    "servei": "Permanent",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "12:50",
+        "fi": "13:10"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "13:10",
+        "fi": "13:40"
+      },
+      {
+        "name": "Neutralització",
+        "treballadora": "Gemma",
+        "inici": "13:40",
+        "fi": "13:55"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Gemma",
+        "inici": "13:55",
+        "fi": "14:15"
+      }
+    ]
+  },
+  {
+    "citaId": 189,
+    "data": "2026-09-29",
+    "servei": "Softy Mood",
+    "parts": [
+      {
+        "name": "Aplicacio",
+        "treballadora": "Gemma",
+        "inici": "10:10",
+        "fi": "10:40"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "10:40",
+        "fi": "11:10"
+      },
+      {
+        "name": "Planxat",
+        "treballadora": "Gemma",
+        "inici": "11:10",
+        "fi": "12:10"
+      },
+      {
+        "name": "Hidratació",
+        "treballadora": "Gemma",
+        "inici": "12:10",
+        "fi": "12:25"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Gemma",
+        "inici": "12:25",
+        "fi": "12:45"
+      }
+    ]
+  },
+  {
+    "citaId": 190,
+    "data": "2026-09-29",
+    "servei": "Tall Curt",
+    "parts": [
+      {
+        "name": "Tall",
+        "treballadora": "Marissa",
+        "inici": "10:30",
+        "fi": "10:45"
+      }
+    ]
+  },
+  {
+    "citaId": 191,
+    "data": "2026-09-29",
+    "servei": "Manicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Marissa",
+        "inici": "14:35",
+        "fi": "14:50"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Marissa",
+        "inici": "14:50",
+        "fi": "15:20"
+      }
+    ]
+  },
+  {
+    "citaId": 192,
+    "data": "2026-09-30",
+    "servei": "Tint Arrels",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Ruth",
+        "inici": "12:35",
+        "fi": "12:55"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "12:55",
+        "fi": "13:25"
+      },
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "13:25",
+        "fi": "13:40"
+      }
+    ]
+  },
+  {
+    "citaId": 193,
+    "data": "2026-09-30",
+    "servei": "Pentinar",
+    "parts": [
+      {
+        "name": "Rentat",
+        "treballadora": "Ruth",
+        "inici": "14:30",
+        "fi": "14:40"
+      },
+      {
+        "name": "Pentinat",
+        "treballadora": "Ruth",
+        "inici": "14:40",
+        "fi": "15:10"
+      }
+    ]
+  },
+  {
+    "citaId": 194,
+    "data": "2026-09-30",
+    "servei": "Softy Mood",
+    "parts": [
+      {
+        "name": "Aplicacio",
+        "treballadora": "Ruth",
+        "inici": "09:25",
+        "fi": "09:55"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "09:55",
+        "fi": "10:25"
+      },
+      {
+        "name": "Planxat",
+        "treballadora": "Ruth",
+        "inici": "10:25",
+        "fi": "11:25"
+      },
+      {
+        "name": "Hidratació",
+        "treballadora": "Gemma",
+        "inici": "11:25",
+        "fi": "11:40"
+      },
+      {
+        "name": "Finalització",
+        "treballadora": "Ruth",
+        "inici": "11:40",
+        "fi": "12:00"
+      }
+    ]
+  },
+  {
+    "citaId": 195,
+    "data": "2026-09-30",
+    "servei": "Manicura",
+    "parts": [
+      {
+        "name": "Preparació",
+        "treballadora": "Ruth",
+        "inici": "15:45",
+        "fi": "16:00"
+      },
+      {
+        "name": "Esmalt",
+        "treballadora": "Ruth",
+        "inici": "16:00",
+        "fi": "16:30"
+      }
+    ]
+  },
+  {
+    "citaId": 196,
+    "data": "2026-09-30",
+    "servei": "Color",
+    "parts": [
+      {
+        "name": "Aplicació",
+        "treballadora": "Gemma",
+        "inici": "11:05",
+        "fi": "11:15"
+      },
+      {
+        "name": "Exposició",
+        "treballadora": null,
+        "inici": "11:15",
+        "fi": "11:55"
+      },
+      {
+        "name": "Sellador i Rentat",
+        "treballadora": "Gemma",
+        "inici": "11:55",
+        "fi": "12:25"
+      }
+    ]
+  }
 ]

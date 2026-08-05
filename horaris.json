@@ -1,42 +1,32 @@
-[
-  {
-    "id": 1,
-    "treballadora": "Marissa",
-    "data": "2026-07-29",
-    "inici": "09:00",
-    "fi": "09:45",
-    "servei": "Manicura"
+{
+  "Ruth": {
+    "horesSetmanals": 40,
+    "notes": "Dinar 30' (dimarts a dijous)",
+    "horari": {
+      "Dimarts":   { "inici": "09:00", "fi": "18:00" },
+      "Dimecres":  { "inici": "09:00", "fi": "18:00" },
+      "Dijous":    { "inici": "09:00", "fi": "18:00" },
+      "Divendres": { "inici": "09:00", "fi": "19:00" },
+      "Dissabte":  { "inici": "08:00", "fi": "13:00" }
+    }
   },
-  {
-    "id": 2,
-    "treballadora": "Marissa",
-    "data": "2026-07-29",
-    "inici": "11:00",
-    "fi": "12:30",
-    "servei": "Massatge"
+  "Gemma": {
+    "horesSetmanals": 35,
+    "horari": {
+      "Dimarts":   [{ "inici": "09:30", "fi": "12:45" }],
+      "Dimecres":  [{ "inici": "09:30", "fi": "12:45" }, { "inici": "15:00", "fi": "19:00" }],
+      "Dijous":    [{ "inici": "09:30", "fi": "12:45" }, { "inici": "15:00", "fi": "20:00" }],
+      "Divendres": [{ "inici": "09:00", "fi": "12:45" }, { "inici": "14:00", "fi": "20:00" }],
+      "Dissabte":  [{ "inici": "08:00", "fi": "15:00" }]
+    }
   },
-  {
-    "id": 3,
-    "treballadora": "Gemma",
-    "data": "2026-07-29",
-    "inici": "10:00",
-    "fi": "11:00",
-    "servei": "Depilació"
-  },
-  {
-    "id": 4,
-    "treballadora": "Ruth",
-    "data": "2026-07-30",
-    "inici": "09:00",
-    "fi": "09:30",
-    "servei": "Cella i pestanyes"
-  },
-  {
-    "id": 5,
-    "treballadora": "Gemma",
-    "data": "2026-08-01",
-    "inici": "10:00",
-    "fi": "10:30",
-    "servei": "Manicura"
+  "Marissa": {
+    "horari": {
+      "Dimarts":   [{ "inici": "09:00", "fi": "13:00" }, { "inici": "14:00", "fi": "18:00" }],
+      "Dimecres":  [{ "inici": "09:00", "fi": "16:00" }],
+      "Dijous":    [{ "inici": "09:00", "fi": "13:00" }, { "inici": "14:00", "fi": "20:00" }],
+      "Divendres": [{ "inici": "09:00", "fi": "14:00" }, { "inici": "15:00", "fi": "20:00" }],
+      "Dissabte":  [{ "inici": "08:00", "fi": "15:00" }]
+    }
   }
-]
+}
