@@ -2,6 +2,12 @@ import { useState } from 'react'
 import { useAppContext } from '../utils/useAppContext'
 import styles from './Form.module.css'
 
+const TREBALLADORES = [
+  { valor: 'M', nom: 'Marissa' },
+  { valor: 'G', nom: 'Gemma' },
+  { valor: 'R', nom: 'Ruth' }
+]
+
 export default function DuracioForm() {
   const { state, dispatch } = useAppContext()
   const { serveis, serveiEscollit } = state
@@ -11,11 +17,18 @@ export default function DuracioForm() {
 
   // duracionsTriades: { [partName]: duracioSeleccionada }
   const [duracionsTriades, setDuracionsTriades] = useState({})
+  const [treballadoresTriades, setTreballadoresTriades] = useState({})
 
   const handleCanvi = (partName, valor) => {
     setDuracionsTriades((prev) => ({
       ...prev,
       [partName]: Number(valor)
+    }))
+  }
+  const handleCanviTreballadora = (partName, valor) => {
+    setTreballadoresTriades((prev) => ({
+      ...prev,
+      [partName]: valor
     }))
   }
 
@@ -30,9 +43,17 @@ export default function DuracioForm() {
 
     console.log(duracionsCompletes)
 
+    const treballadoresCompletes = {}
+    serveis[serveiEscollit].parts.forEach((part) => {
+      if (part.name !== 'Exposició') {
+        treballadoresCompletes[part.name] =
+          treballadoresTriades[part.name] ?? TREBALLADORES[0].valor
+      }
+    })
+
     dispatch({
       type: 'BUSCAR_ESPAI',
-      payload: { pantalla: 'buscar_espai', duracions: duracionsCompletes }
+      payload: { pantalla: 'buscar_espai', duracions: duracionsCompletes, treballadores: treballadoresCompletes }
     })
   }
 
@@ -43,6 +64,7 @@ export default function DuracioForm() {
       {serveis[serveiEscollit].parts.map((part) => (
         <div className={styles.parteGroup} key={part.name}>
           <label htmlFor={part.name}>{part.name}</label>
+        <div className={styles.controls}> 
 
           {part.duration.length > 1 ? (
             <select
@@ -59,6 +81,21 @@ export default function DuracioForm() {
           ) : (
             <span className={styles.duracioFixa}>{part.duration[0]} min</span>
           )}
+          {part.name !== 'Exposició' && (
+            <select
+              id={`${part.name}-treballadora`}
+              aria-label={`Treballadora per ${part.name}`}
+              value={treballadoresTriades[part.name] ?? TREBALLADORES[0].valor}
+              onChange={(e) => handleCanviTreballadora(part.name, e.target.value)}
+            >
+              {TREBALLADORES.map((t) => (
+                <option key={t.valor} value={t.valor} title={t.nom}>
+                  {t.valor}
+                </option>
+              ))}
+            </select>
+          )}
+        </div>
         </div>
       ))}
 
