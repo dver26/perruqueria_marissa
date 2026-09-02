@@ -1,3 +1,7 @@
 export const ACTIONS = {
-  ACTUALITZAR: "ACTUALITZAR",
-};
+  ACTUALITZAR: 'ACTUALITZAR'
+}
+
+export const PANTALLAS = {
+  INICIO: 'INICIO'
+}

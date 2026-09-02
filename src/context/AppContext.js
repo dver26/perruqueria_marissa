@@ -1,17 +1,23 @@
 // AppContext.js  (solo el contexto y el reducer, sin componentes)
-import { createContext } from "react";
+import { createContext } from 'react'
+import { ACTIONS, PANTALLAS } from '../utils/consts.js'
 
-export const AppContext = createContext(null);
+export const AppContext = createContext(null)
 
 const estadoInicial = {
-  pantalla: "calendari",
-};
+  pantalla: PANTALLAS.INICIO
+}
 
 export function reducer(state, action) {
   switch (action.type) {
+    case ACTIONS.ACTUALITZAR:
+      return {
+        ...state,
+        ...action.payload
+      }
     default:
-      return state;
+      return state
   }
 }
 
-export { estadoInicial };
+export { estadoInicial }
