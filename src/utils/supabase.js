@@ -6,6 +6,7 @@ const supabaseKey = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY
 export const supabase = createClient(supabaseUrl, supabaseKey)
 
 export async function fetchTabla(nombreTabla) {
+  // Serveix per seleccionar tot de NOMES UNA TAULA
   const { data, error } = await supabase.from(nombreTabla).select('*')
   if (error) {
     console.error(`Error cargando ${nombreTabla}:`, error)

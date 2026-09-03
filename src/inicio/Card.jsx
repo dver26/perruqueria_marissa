@@ -9,7 +9,6 @@ const Card = ({ id }) => {
   const servei = state.servicios.find((servicio) => servicio.id === id)
 
   const handleClick = () => {
-    console.log(servei.nombre)
     dispatch({
       type: ACTIONS.ACTUALITZAR,
       payload: { pantalla: PANTALLAS.CONFIGURACIO_CITA, servei }

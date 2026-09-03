@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useAppContext } from './context/useAppContext.js'
 import { fetchTablas } from './utils/supabase.js'
-import { ACTIONS, PANTALLAS } from './utils/consts.js'
+import { ACTIONS, PANTALLAS, TAULES } from './utils/consts.js'
 
 import CardGrid from './inicio/CardGrid.jsx'
 import ConfigCita from './configuracio_cita/ConfigCita.jsx'
@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     const cargarDatosIniciales = async () => {
-      const datos = await fetchTablas(['servicios', 'empleados'])
+      const datos = await fetchTablas([TAULES.SERVICIOS, TAULES.EMPLEADOS])
       const fallo = Object.entries(datos).find(([, valor]) => valor === null) // busquem si ha hagut algun fallo en algun fetch
 
       if (fallo) {
