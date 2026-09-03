@@ -3,5 +3,6 @@ export const ACTIONS = {
 }
 
 export const PANTALLAS = {
-  INICIO: 'INICIO'
+  INICIO: 'INICIO',
+  CONFIGURACIO_CITA: 'CONFIGURACIO_CITA'
 }

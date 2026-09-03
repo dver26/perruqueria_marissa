@@ -5,7 +5,6 @@ const supabaseKey = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY
 
 export const supabase = createClient(supabaseUrl, supabaseKey)
 
-// utils/supabaseHelpers.js
 export async function fetchTabla(nombreTabla) {
   const { data, error } = await supabase.from(nombreTabla).select('*')
   if (error) {

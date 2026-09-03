@@ -5,7 +5,9 @@ import { ACTIONS, PANTALLAS } from '../utils/consts.js'
 export const AppContext = createContext(null)
 
 const estadoInicial = {
-  pantalla: PANTALLAS.INICIO
+  pantalla: PANTALLAS.INICIO,
+  empleados: [],
+  servicios: []
 }
 
 export function reducer(state, action) {
