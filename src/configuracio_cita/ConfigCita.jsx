@@ -2,10 +2,13 @@ import { useEffect, useState } from 'react'
 
 import { useAppContext } from '../context/useAppContext'
 import { supabase } from '../utils/supabase'
-import { ACTIONS, PANTALLAS, TAULES } from '../utils/consts.js'
+import { ACTIONS, PANTALLAS, TAULES, TORNS } from '../utils/consts.js'
+
+import './ConfigCita.css'
 
 const ConfigCita = () => {
   const { state, dispatch } = useAppContext()
+
   const [tareas, setTareas] = useState([])
   const [duracions, setDuracions] = useState([])
 
@@ -57,8 +60,6 @@ const ConfigCita = () => {
     })
   }
 
-  console.log(duracions)
-
   return (
     <>
       <button className='tornar-button' onClick={handleTornarAInici}>
@@ -66,25 +67,54 @@ const ConfigCita = () => {
       </button>
       <div className='container-general'>
         <h3 className='titulo'>{state.servei.nombre}</h3>
-        <div className='seleccio'>
+        <div className='seleccio-parts'>
           {tareas.map((tarea) => {
             return (
               <div key={tarea.id} className='container-part'>
-                {tarea.nombre}
-                {duracions[tarea.id].length}
-                {duracions[tarea.id].length > 1 ? (
-                  <select name='' id=''>
-                    {duracions[tarea.id].map((duracio) => {
-                      return <option value={duracio}>{duracio} min</option>
-                    })}
-                  </select>
-                ) : (
-                  <span>Hola</span>
-                )}
+                <p className='label'>{tarea.nombre}</p>
+                <div className='seleccions'>
+                  {duracions[tarea.id].length > 1 ? (
+                    <select id={`duracio-${tarea.id}`}>
+                      {duracions[tarea.id].map((duracio, i) => {
+                        return (
+                          <option key={i} value={duracio}>
+                            {duracio} min
+                          </option>
+                        )
+                      })}
+                    </select>
+                  ) : (
+                    <span>{duracions[tarea.id][0]}</span>
+                  )}
+                  {tarea.nombre !== 'Exposició' && (
+                    <select id={`treballadora-${tarea.id}`}>
+                      {state.empleados.map((empleado) => {
+                        return (
+                          <option key={empleado.id} value={empleado.id}>
+                            {empleado.nombre}
+                          </option>
+                        )
+                      })}
+                      <option value='Indiferent'>Indiferent</option>
+                    </select>
+                  )}
+                </div>
               </div>
             )
           })}
         </div>
+        <div className='seleccio-torn'>
+          <label>Torn</label>
+          <div className='torn-select-wrapper'>
+            <select id='torn-servei'>
+              <option value={TORNS.MATI}>Matí</option>
+              <option value={TORNS.TARDA}>Tarda</option>
+              <option value={TORNS.INDIFERENT}>Indiferent</option>
+            </select>
+          </div>
+        </div>
+
+        <button className='submit-button'>Continuar</button>
       </div>
     </>
   )

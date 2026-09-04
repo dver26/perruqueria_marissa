@@ -13,3 +13,9 @@ export const TAULES = {
   TAREAS: 'tareas',
   DURACIONS: 'tarea_duracions'
 }
+
+export const TORNS = {
+  MATI: 'mati',
+  TARDA: 'tarda',
+  INDIFERENT: 'indiferent'
+}
