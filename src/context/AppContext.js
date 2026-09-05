@@ -7,7 +7,8 @@ export const AppContext = createContext(null)
 const estadoInicial = {
   pantalla: PANTALLAS.INICIO,
   empleados: [],
-  servicios: []
+  servicios: [],
+  client: null
 }
 
 export function reducer(state, action) {
