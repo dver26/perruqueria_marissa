@@ -14,6 +14,7 @@ const ConfigCita = () => {
 
   const [treballadoresEscollides, setTreballadoresEscollides] = useState({})
   const [duracionsEscollides, setDuracionsEscollides] = useState({})
+  const [torn, setTorn] = useState(null)
 
   useEffect(() => {
     const getPartsIDuracions = async () => {
@@ -77,6 +78,10 @@ const ConfigCita = () => {
     }
   }
 
+  const handleCanviTorn = (event) => {
+    setTorn(event.target.value)
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault()
 
@@ -98,7 +103,8 @@ const ConfigCita = () => {
       payload: {
         duracions: duracionsCompletes,
         treballadores: treballadoresCompletes,
-        pantalla: PANTALLAS.CALENDARI
+        pantalla: PANTALLAS.CALENDARI,
+        torn: torn ?? TORNS.MATI
       }
     })
   }
@@ -155,7 +161,7 @@ const ConfigCita = () => {
         <div className='seleccio-torn'>
           <label>Torn</label>
           <div className='torn-select-wrapper'>
-            <select id='torn-servei'>
+            <select onChange={(e) => handleCanviTorn(e)} id='torn-servei'>
               <option value={TORNS.MATI}>Matí</option>
               <option value={TORNS.TARDA}>Tarda</option>
               <option value={TORNS.INDIFERENT}>Indiferent</option>
