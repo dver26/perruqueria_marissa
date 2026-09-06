@@ -8,6 +8,7 @@ import ConfigCita from './configuracio_cita/ConfigCita.jsx'
 
 import './App.css'
 import Calendari from './calendari/Calendari.jsx'
+import VisorDia from './visor_dia/VisorDia.jsx'
 
 function App() {
   const { state, dispatch } = useAppContext()
@@ -35,6 +36,8 @@ function App() {
       return <ConfigCita />
     case PANTALLAS.CALENDARI:
       return <Calendari />
+    case PANTALLAS.VISOR_DIA:
+      return <VisorDia />
     default:
       return <p>Error</p>
   }

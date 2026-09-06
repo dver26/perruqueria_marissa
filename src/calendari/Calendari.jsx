@@ -17,6 +17,13 @@ function Calendari() {
     })
   }
 
+  const handleClickData = (info) => {
+    dispatch({
+      type: ACTIONS.ACTUALITZAR,
+      payload: { data: info.date, pantalla: PANTALLAS.VISOR_DIA }
+    })
+  }
+
   return (
     <>
       <button className='tornar-button' onClick={handleTornarEnrere}>
@@ -30,7 +37,7 @@ function Calendari() {
           firstDay={1}
           height='auto'
           fixedWeekCount={false}
-          dateClick={() => console.log('hola')}
+          dateClick={(info) => handleClickData(info)}
           dayCellContent={(arg) => {
             return (
               <div className='celda-dia'>
