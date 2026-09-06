@@ -12,6 +12,9 @@ const ConfigCita = () => {
   const [tareas, setTareas] = useState([])
   const [duracions, setDuracions] = useState([])
 
+  const [treballadoresEscollides, setTreballadoresEscollides] = useState({})
+  const [duracionsEscollides, setDuracionsEscollides] = useState({})
+
   useEffect(() => {
     const getPartsIDuracions = async () => {
       const { data, error } = await supabase
@@ -60,6 +63,45 @@ const ConfigCita = () => {
     })
   }
 
+  const handleCanviSelector = (event, tarea) => {
+    if (event.target.id == `duracio-${tarea}`) {
+      setDuracionsEscollides({
+        ...duracionsEscollides,
+        [tarea]: event.target.value
+      })
+    } else if (event.target.id == `treballadora-${tarea}`) {
+      setTreballadoresEscollides({
+        ...treballadoresEscollides,
+        [tarea]: event.target.value
+      })
+    }
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+
+    const duracionsCompletes = {}
+    const treballadoresCompletes = {}
+
+    tareas.forEach((tarea) => {
+      duracionsCompletes[tarea.id] =
+        duracionsEscollides[tarea.id] ?? duracions[tarea.id][0]
+
+      if (tarea.nombre !== 'Exposició') {
+        treballadoresCompletes[tarea.id] =
+          treballadoresEscollides[tarea.id] ?? 'Indiferent'
+      }
+    })
+
+    dispatch({
+      type: ACTIONS.ACTUALITZAR,
+      payload: {
+        duracions: duracionsCompletes,
+        treballadores: treballadoresCompletes
+      }
+    })
+  }
+
   return (
     <>
       <button className='tornar-button' onClick={handleTornarAInici}>
@@ -74,7 +116,10 @@ const ConfigCita = () => {
                 <p className='label'>{tarea.nombre}</p>
                 <div className='seleccions'>
                   {duracions[tarea.id].length > 1 ? (
-                    <select id={`duracio-${tarea.id}`}>
+                    <select
+                      onChange={(e) => handleCanviSelector(e, tarea.id)}
+                      id={`duracio-${tarea.id}`}
+                    >
                       {duracions[tarea.id].map((duracio, i) => {
                         return (
                           <option key={i} value={duracio}>
@@ -87,7 +132,11 @@ const ConfigCita = () => {
                     <span>{duracions[tarea.id][0]}</span>
                   )}
                   {tarea.nombre !== 'Exposició' && (
-                    <select id={`treballadora-${tarea.id}`}>
+                    <select
+                      onChange={(e) => handleCanviSelector(e, tarea.id)}
+                      id={`treballadora-${tarea.id}`}
+                    >
+                      <option value='Indiferent'>Indiferent</option>
                       {state.empleados.map((empleado) => {
                         return (
                           <option key={empleado.id} value={empleado.id}>
@@ -95,7 +144,6 @@ const ConfigCita = () => {
                           </option>
                         )
                       })}
-                      <option value='Indiferent'>Indiferent</option>
                     </select>
                   )}
                 </div>
@@ -114,7 +162,9 @@ const ConfigCita = () => {
           </div>
         </div>
 
-        <button className='submit-button'>Continuar</button>
+        <button onClick={(e) => handleSubmit(e)} className='submit-button'>
+          Continuar
+        </button>
       </div>
     </>
   )
