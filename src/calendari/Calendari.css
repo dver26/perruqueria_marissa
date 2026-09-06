@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap');
+
+.calendari-embolcall {
+  --tinta: #241b3d;
+  --tinta-suau: #8b8598;
+  --lila: #6c63ff;
+  --lila-fosc: #4c1d95;
+  --lila-molt-suau: #f4f2ff;
+  --vora: #ece9f7;
+
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1.75rem;
+  background: #fffdfc;
+  border: 1px solid var(--vora);
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--tinta);
+}
+
+/* Capçalera: mes + fletxes */
+.calendari-embolcall .fc-toolbar {
+  margin-bottom: 1.25rem !important;
+}
+
+.calendari-embolcall .fc-toolbar-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--lila-fosc);
+  text-transform: capitalize;
+}
+
+.calendari-embolcall .fc-button {
+  background: transparent !important;
+  border: none !important;
+  color: var(--lila) !important;
+  box-shadow: none !important;
+  padding: 0.3rem 0.6rem !important;
+  border-radius: 10px !important;
+  transition: background-color 0.15s ease;
+}
+
+.calendari-embolcall .fc-button:hover {
+  background-color: var(--lila-molt-suau) !important;
+}
+
+.calendari-embolcall .fc-button:focus {
+  box-shadow: 0 0 0 2px var(--lila-molt-suau) !important;
+}
+
+.calendari-embolcall .fc-icon {
+  font-size: 1.1rem;
+}
+
+/* Graella */
+.calendari-embolcall .fc-scrollgrid {
+  border: none !important;
+}
+
+.calendari-embolcall .fc-col-header-cell {
+  border: none !important;
+  padding-bottom: 0.5rem;
+}
+
+.calendari-embolcall .fc-col-header-cell-cushion {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--tinta-suau);
+}
+
+.calendari-embolcall .fc-daygrid-day {
+  border-color: var(--vora) !important;
+}
+
+.calendari-embolcall .fc-daygrid-day-frame {
+  padding: 0.25rem;
+  min-height: 72px;
+}
+
+.calendari-embolcall .fc-daygrid-day-top {
+  justify-content: center;
+  padding-top: 0.4rem;
+}
+
+.calendari-embolcall .fc-daygrid-day-number {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--tinta);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.15s ease;
+}
+
+.calendari-embolcall .fc-daygrid-day:hover .fc-daygrid-day-number {
+  background-color: var(--lila-molt-suau);
+}
+
+.calendari-embolcall .fc-day-today {
+  background-color: var(--lila-molt-suau) !important;
+}
+
+.calendari-embolcall .fc-day-today .fc-daygrid-day-number {
+  background-color: var(--lila);
+  color: #fff;
+  font-weight: 600;
+}
+
+.calendari-embolcall .fc-day-other .fc-daygrid-day-number {
+  color: #d5d2e2;
+}
+
+/* Esdeveniments */
+.calendari-embolcall .fc-daygrid-event-harness {
+  margin-top: 2px !important;
+}
+
+.calendari-event {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 2px 6px;
+  border-radius: 8px;
+  background-color: var(--lila-molt-suau);
+  overflow: hidden;
+}
+
+.calendari-event-punt {
+  width: 6px;
+  height: 6px;
+  flex: none;
+  border-radius: 50%;
+  background-color: var(--lila);
+}
+
+.calendari-event-titol {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--lila-fosc);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.calendari-embolcall .fc-daygrid-more-link {
+  font-size: 0.7rem;
+  color: var(--lila);
+  font-weight: 500;
+}

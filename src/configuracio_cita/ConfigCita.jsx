@@ -97,7 +97,8 @@ const ConfigCita = () => {
       type: ACTIONS.ACTUALITZAR,
       payload: {
         duracions: duracionsCompletes,
-        treballadores: treballadoresCompletes
+        treballadores: treballadoresCompletes,
+        pantalla: PANTALLAS.CALENDARI
       }
     })
   }

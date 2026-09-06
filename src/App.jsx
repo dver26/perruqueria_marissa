@@ -7,6 +7,7 @@ import CardGrid from './inicio/CardGrid.jsx'
 import ConfigCita from './configuracio_cita/ConfigCita.jsx'
 
 import './App.css'
+import Calendari from './calendari/Calendari.jsx'
 
 function App() {
   const { state, dispatch } = useAppContext()
@@ -32,6 +33,8 @@ function App() {
       return <CardGrid />
     case PANTALLAS.CONFIGURACIO_CITA:
       return <ConfigCita />
+    case PANTALLAS.CALENDARI:
+      return <Calendari />
     default:
       return <p>Error</p>
   }
