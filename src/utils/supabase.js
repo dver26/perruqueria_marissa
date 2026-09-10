@@ -31,3 +31,12 @@ export async function UpdateTabla(nombreTabla, fila) {
   }
   return data
 }
+
+export async function DeleteTabla(nombreTabla, fila) {
+  const { data, error } = await supabase.from(nombreTabla).delete(fila).eq('id', fila.id).select()
+  if (error) {
+    console.error(`Error eliminando ${nombreTabla}:`, error)
+    return null
+  }
+  return data
+}

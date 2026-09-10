@@ -8,7 +8,8 @@ const estadoInicial = {
   pantalla: PANTALLAS.INICIO,
   empleados: [],
   servicios: [],
-  client: null
+  client: null,
+  treballador: null
 }
 
 export function reducer(state, action) {
