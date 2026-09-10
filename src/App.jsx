@@ -5,6 +5,7 @@ import { ACTIONS, PANTALLAS, TAULES } from './utils/consts.js'
 
 import CardGrid from './inicio/CardGrid.jsx'
 import ConfigCita from './configuracio_cita/ConfigCita.jsx'
+import Editar_Client from './editar_client/Editar_Client.jsx'
 
 import './App.css'
 import Calendari from './calendari/Calendari.jsx'
@@ -38,6 +39,8 @@ function App() {
       return <Calendari />
     case PANTALLAS.VISOR_DIA:
       return <VisorDia />
+    case PANTALLAS.EDITAR_CLIENT:
+      return <Editar_Client />
     default:
       return <p>Error</p>
   }

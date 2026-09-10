@@ -21,3 +21,13 @@ export async function fetchTablas(nombresTablas) {
   )
   return Object.fromEntries(resultados) // { empleados: [...], servicios: [...], ... }
 }
+
+
+export async function UpdateTabla(nombreTabla, fila) {
+  const { data, error } = await supabase.from(nombreTabla).update(fila).eq('id', fila.id).select()
+  if (error) {
+    console.error(`Error actualizando ${nombreTabla}:`, error)
+    return null
+  }
+  return data
+}
