@@ -40,3 +40,12 @@ export async function DeleteTabla(nombreTabla, fila) {
   }
   return data
 }
+
+export async function InsertTabla(nombreTabla, fila) {
+  const { data, error } = await supabase.from(nombreTabla).insert(fila).select()
+  if (error) {
+    console.error(`Error insertando en ${nombreTabla}:`, error)
+    return null
+  }
+  return data
+}

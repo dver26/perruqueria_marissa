@@ -57,6 +57,13 @@ const CardGrid = () => {
     
   }
 
+  const handleClickCC = () => {
+    dispatch({
+      type: ACTIONS.ACTUALITZAR,
+      payload: { pantalla: PANTALLAS.CREAR_CLIENT }
+    })
+  }
+
   const handleSeleccionarClient = (client_temp) => {
     dispatch({ type: ACTIONS.ACTUALITZAR, payload: { client: client_temp } })
     setPanellC(false)
@@ -136,6 +143,9 @@ const CardGrid = () => {
             value={cerca}
             onChange={(e) => setCerca(e.target.value)}
           />
+          <button className='boto-crear-clients' onClick={handleClickCC}>
+            Crear
+          </button>
           <ul>
             {clientsFiltrats.map((client_temp) => (
               <li
