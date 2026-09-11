@@ -3,7 +3,8 @@ import { useAppContext } from './context/useAppContext.js'
 import { fetchTablas } from './utils/supabase.js'
 import { ACTIONS, PANTALLAS, TAULES } from './utils/consts.js'
 
-import CardGrid from './inicio/CardGrid.jsx'
+import Crear_Client from './crear_client/Crear_Client.jsx'
+import CardGrid from './Inicio/CardGrid.jsx'
 import ConfigCita from './configuracio_cita/ConfigCita.jsx'
 import Editar_Client from './editar_client/Editar_Client.jsx'
 
@@ -41,6 +42,10 @@ function App() {
       return <VisorDia />
     case PANTALLAS.EDITAR_CLIENT:
       return <Editar_Client />
+    case PANTALLAS.EDITAR_TREBALLADOR:
+      return <Editar_Treballador />
+    case PANTALLAS.CREAR_CLIENT:
+      return <Crear_Client />
     default:
       return <p>Error</p>
   }

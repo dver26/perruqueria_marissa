@@ -34,6 +34,22 @@ const CardGrid = () => {
     setCerca('') // Reseteja el camp de cerca quan s'obre el panell
   }
 
+  const handleClickT = () => {
+    // Aquí pots afegir la lògica per canviar de pantalla o fer altres accions quan es clica el botó
+    setPanellT((prev) => !prev) // Com !Panell Canvia l'estat de Panell per mostrar o amagar el panell de treballadors
+    setAccionsC(false)
+    setAccionsT(false)
+    setPanellC(false) // Assegura't que el panell de clients està tancat quan s'obre el panell de treballadors
+    
+  }
+
+  const handleClickCC = () => {
+    dispatch({
+      type: ACTIONS.ACTUALITZAR,
+      payload: { pantalla: PANTALLAS.CREAR_CLIENT }
+    })
+  }
+
   const handleSeleccionarClient = (client_temp) => {
     dispatch({ type: ACTIONS.ACTUALITZAR, payload: { client: client_temp } })
     setPanell(false)
@@ -84,6 +100,9 @@ const CardGrid = () => {
             value={cerca}
             onChange={(e) => setCerca(e.target.value)}
           />
+          <button className='boto-crear-clients' onClick={handleClickCC}>
+            Crear
+          </button>
           <ul>
             {clientsFiltrats.map((client_temp) => (
               <li
