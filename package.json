@@ -16,6 +16,7 @@
     "@fullcalendar/react": "^6.1.21",
     "@fullcalendar/timegrid": "^6.1.21",
     "@supabase/supabase-js": "^2.114.0",
+    "libphonenumber-js": "^1.13.13",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
