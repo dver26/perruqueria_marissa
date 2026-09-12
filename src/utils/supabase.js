@@ -49,3 +49,12 @@ export async function InsertTabla(nombreTabla, fila) {
   }
   return data
 }
+
+export async function BuscarPorCampo(nombreTabla, campo, valor) {
+  const { data, error } = await supabase.from(nombreTabla).select('*').eq(campo, valor)
+  if (error) {
+    console.error(`Error buscando en ${nombreTabla}:`, error)
+    return []
+  }
+  return data
+}

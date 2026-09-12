@@ -2,8 +2,8 @@ import { useAppContext } from '../context/useAppContext'
 import { ACTIONS, PANTALLAS } from '../utils/consts.js'
 import './Crear_Client.css'
 import { useState } from 'react'
-import { InsertTabla } from '../utils/supabase.js'
-import { validarEmail, validarTelefono } from '../utils/validacions.js'
+import { InsertTabla, BuscarPorCampo } from '../utils/supabase.js'
+import { validarEmail, validarTelefono, normalizarTelefono } from '../utils/validacions.js'
 
 const CrearClient = () => {
     const { dispatch } = useAppContext()
@@ -18,6 +18,8 @@ const CrearClient = () => {
 
     const [error, setError] = useState('')
     const [guardando, setGuardando] = useState(false)
+    const [clientsCoincidents, setClientsCoincidents] = useState([])
+    const [mostrarModal, setMostrarModal] = useState(false)
 
     const handleChange = (e) => {
         const { name, value } = e.target
@@ -36,6 +38,8 @@ const CrearClient = () => {
             return
         }
 
+        const telefonoNormalizado = normalizarTelefono(formulari.telefono)
+
         if (formulari.email.trim() && !validarEmail(formulari.email)) {
             setError('El format de l’email no és vàlid')
             return
@@ -44,21 +48,47 @@ const CrearClient = () => {
         setError('')
         setGuardando(true)
 
-        try {
-              const resultado = await InsertTabla('clientes', formulari)
+        const coincidents = await BuscarPorCampo('clientes', 'telefono', telefonoNormalizado)
 
-              if (!resultado) {
-                  setError('No s’ha pogut crear el client. Torna-ho a provar.')
-                  return
-              }
-
-              const clientNou = resultado[0]
-              console.log('Client creat amb èxit:', clientNou)
-              dispatch({ type: ACTIONS.ACTUALITZAR, payload: { client: clientNou, pantalla: PANTALLAS.INICIO } })
-            
-          } finally {
-              setGuardando(false)
+        if (coincidents.length > 0) {
+            setClientsCoincidents(coincidents)
+            setMostrarModal(true)
+            setGuardando(false)
+            return
         }
+
+        await guardarClientDefinitiu(telefonoNormalizado)
+    }
+
+    const guardarClientDefinitiu = async (telefonoNormalizado) => {
+        setGuardando(true)
+        try {
+            const datosAGuardar = { ...formulari, telefono: telefonoNormalizado }
+            const resultado = await InsertTabla('clientes', datosAGuardar)
+
+
+            if (!resultado) {
+                setError('No s’ha pogut crear el client. Torna-ho a provar.')
+                return
+            }
+
+            const clientNou = resultado[0]
+            console.log('Client creat amb èxit:', clientNou)
+            dispatch({ type: ACTIONS.ACTUALITZAR, payload: { client: clientNou, pantalla: PANTALLAS.INICIO } })
+        } finally {
+            setGuardando(false)
+            setMostrarModal(false)
+        }
+    }
+
+    const handleConfirmarDuplicat = () => {
+        const telefonoNormalizado = normalizarTelefono(formulari.telefono)
+        guardarClientDefinitiu(telefonoNormalizado)
+    }
+
+    const handleCancelarDuplicat = () => {
+        setMostrarModal(false)
+        setClientsCoincidents([])
     }
 
     const handleCancelar = () => {
@@ -104,6 +134,23 @@ return (
 
       <button onClick={handleCancelar} disabled={guardando}>Cancelar</button>
 
+      {mostrarModal && (
+        <div className="modal-overlay">
+          <div className="modal-contingut">
+            <p>Ja existeixen clients amb aquest número de telèfon:</p>
+            <ul>
+              {clientsCoincidents.map(c => (
+                <li key={c.id}>{c.nombre} {c.apellidos}</li>
+              ))}
+            </ul>
+            <p>Estàs segura que vols afegir aquest client?</p>
+            <div className="modal-botons">
+              <button onClick={handleConfirmarDuplicat}>Sí</button>
+              <button onClick={handleCancelarDuplicat}>No</button>
+            </div>
+          </div>
+        </div>
+    )}
     </div>
   )}
 

@@ -15,3 +15,8 @@ export function validarTelefono(telefono, paisPorDefecto = 'ES') {
     return false
   }
 }
+
+export function normalizarTelefono(telefono, paisPorDefecto = 'ES') {
+  const phone = parsePhoneNumberFromString(telefono, paisPorDefecto)
+  return phone ? phone.number : telefono.trim()
+}
