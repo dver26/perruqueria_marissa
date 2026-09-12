@@ -20,6 +20,7 @@ const CrearClient = () => {
     const [guardando, setGuardando] = useState(false)
     const [clientsCoincidents, setClientsCoincidents] = useState([])
     const [mostrarModal, setMostrarModal] = useState(false)
+    const [motiuDuplicat, setMotiuDuplicat] = useState('') // 'nom' o 'telefon'
 
     const handleChange = (e) => {
         const { name, value } = e.target
@@ -41,17 +42,31 @@ const CrearClient = () => {
         const telefonoNormalizado = normalizarTelefono(formulari.telefono)
 
         if (formulari.email.trim() && !validarEmail(formulari.email)) {
-            setError('El format de l’email no és vàlid')
+            setError('El format de l\u2019email no és vàlid')
             return
         }
 
         setError('')
         setGuardando(true)
 
-        const coincidents = await BuscarPorCampo('clientes', 'telefono', telefonoNormalizado)
+        // Comprovació de nom + cognoms duplicats
+        const clientsAmbMateixNom = await BuscarPorCampo('clientes', 'nombre', formulari.nombre)
+        const coincidentsNom = clientsAmbMateixNom.filter(c => c.apellidos === formulari.apellidos)
 
-        if (coincidents.length > 0) {
-            setClientsCoincidents(coincidents)
+        if (coincidentsNom.length > 0) {
+            setClientsCoincidents(coincidentsNom)
+            setMotiuDuplicat('nom')
+            setMostrarModal(true)
+            setGuardando(false)
+            return
+        }
+
+        // Comprovació de telèfon duplicat
+        const coincidentsTelefon = await BuscarPorCampo('clientes', 'telefono', telefonoNormalizado)
+
+        if (coincidentsTelefon.length > 0) {
+            setClientsCoincidents(coincidentsTelefon)
+            setMotiuDuplicat('telefon')
             setMostrarModal(true)
             setGuardando(false)
             return
@@ -68,12 +83,11 @@ const CrearClient = () => {
 
 
             if (!resultado) {
-                setError('No s’ha pogut crear el client. Torna-ho a provar.')
+                setError('No s\u2019ha pogut crear el client. Torna-ho a provar.')
                 return
             }
 
             const clientNou = resultado[0]
-            console.log('Client creat amb èxit:', clientNou)
             dispatch({ type: ACTIONS.ACTUALITZAR, payload: { client: clientNou, pantalla: PANTALLAS.INICIO } })
         } finally {
             setGuardando(false)
@@ -137,13 +151,17 @@ return (
       {mostrarModal && (
         <div className="modal-overlay">
           <div className="modal-contingut">
-            <p>Ja existeixen clients amb aquest número de telèfon:</p>
+            {motiuDuplicat === 'nom' ? (
+              <p>Ja tens un client amb el mateix nom i cognoms:</p>
+            ) : (
+              <p>Ja existeixen clients amb aquest número de telèfon:</p>
+            )}
             <ul>
               {clientsCoincidents.map(c => (
-                <li key={c.id}>{c.nombre} {c.apellidos}</li>
+                <li key={c.id}>{c.nombre} {c.apellidos} — {c.telefono}</li>
               ))}
             </ul>
-            <p>Estàs segura que vols afegir aquest client?</p>
+            <p>Segur que vols crear aquest client?</p>
             <div className="modal-botons">
               <button onClick={handleConfirmarDuplicat}>Sí</button>
               <button onClick={handleCancelarDuplicat}>No</button>
