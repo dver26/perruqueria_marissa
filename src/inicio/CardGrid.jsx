@@ -6,6 +6,8 @@ import './CardGrid.css'
 
 import { fetchTabla } from '../utils/supabase.js'
 
+import { normalizarTexto } from '../utils/validacions.js'
+
 import { useEffect, useState } from 'react'
 
 import { ACTIONS, PANTALLAS } from '../utils/consts.js'
@@ -72,18 +74,20 @@ const CardGrid = () => {
     })
   }
 
-  const clientsFiltrats = clients.filter((client_temp) =>
-    client_temp.nombre
+  const netejarText = (text) =>
+    text
       .toLowerCase()
       .normalize('NFD')
       .replace(/[\u0300-\u036f]/g, '')
-      .startsWith(
-        cerca
-          .toLowerCase()
-          .normalize('NFD')
-          .replace(/[\u0300-\u036f]/g, '')
-      )
-  )
+
+  const cercaNetejada = netejarText(normalizarTexto(cerca))
+
+  const clientsFiltrats = clients.filter((client_temp) => {
+    const nomComplet = netejarText(
+      normalizarTexto(client_temp.nombre + ' ' + client_temp.apellidos)
+    )
+    return nomComplet.includes(cercaNetejada)
+  })
 
   return (
     <div>
