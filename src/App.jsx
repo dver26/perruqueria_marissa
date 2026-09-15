@@ -4,7 +4,7 @@ import { fetchTablas } from './utils/supabase.js'
 import { ACTIONS, PANTALLAS, TAULES } from './utils/consts.js'
 
 import Crear_Client from './crear_client/Crear_Client.jsx'
-import CardGrid from './Inicio/CardGrid.jsx'
+import CardGrid from './inicio/CardGrid.jsx'
 import ConfigCita from './configuracio_cita/ConfigCita.jsx'
 import Editar_Client from './editar_client/Editar_Client.jsx'
 

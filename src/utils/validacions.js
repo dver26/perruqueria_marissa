@@ -20,3 +20,11 @@ export function normalizarTelefono(telefono, paisPorDefecto = 'ES') {
   const phone = parsePhoneNumberFromString(telefono, paisPorDefecto)
   return phone ? phone.number : telefono.trim()
 }
+
+export function normalizarTexto(texto) {
+  if (!texto) return ''
+  return texto
+    .split(' ')
+    .filter(palabra => palabra.length > 0)
+    .join(' ')
+}

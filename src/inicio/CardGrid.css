@@ -26,6 +26,22 @@
   background-color: #333;
 }
 
+.boto-crear-clients {
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #4a4a4a;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 0.8rem;
+}
+
+.boto-crear-clients:hover {
+  background-color: #333;
+}
+
 .panell-clients {
   margin: 1rem 1.5rem 0;
   padding: 1rem;

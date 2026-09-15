@@ -3,7 +3,7 @@ import { ACTIONS, PANTALLAS } from '../utils/consts.js'
 import './Crear_Client.css'
 import { useState } from 'react'
 import { InsertTabla, BuscarPorCampo } from '../utils/supabase.js'
-import { validarEmail, validarTelefono, normalizarTelefono } from '../utils/validacions.js'
+import { validarEmail, validarTelefono, normalizarTelefono, normalizarTexto } from '../utils/validacions.js'
 
 const CrearClient = () => {
     const { dispatch } = useAppContext()
@@ -46,12 +46,19 @@ const CrearClient = () => {
             return
         }
 
+        // Normalitzem nom i cognoms: eliminem espais als extrems i col·lapsem
+        // els espais múltiples entre paraules a un sol espai.
+        const nombreNormalizado = normalizarTexto(formulari.nombre)
+        const apellidosNormalizado = normalizarTexto(formulari.apellidos)
+
         setError('')
         setGuardando(true)
 
-        // Comprovació de nom + cognoms duplicats
-        const clientsAmbMateixNom = await BuscarPorCampo('clientes', 'nombre', formulari.nombre)
-        const coincidentsNom = clientsAmbMateixNom.filter(c => c.apellidos === formulari.apellidos)
+        // Comprovació de nom + cognoms duplicats (comparant amb el mateix format normalitzat)
+        const clientsAmbMateixNom = await BuscarPorCampo('clientes', 'nombre', nombreNormalizado)
+        const coincidentsNom = clientsAmbMateixNom.filter(
+            c => normalizarTexto(c.apellidos) === apellidosNormalizado
+        )
 
         if (coincidentsNom.length > 0) {
             setClientsCoincidents(coincidentsNom)
@@ -72,13 +79,13 @@ const CrearClient = () => {
             return
         }
 
-        await guardarClientDefinitiu(telefonoNormalizado)
+        await guardarClientDefinitiu(telefonoNormalizado, nombreNormalizado, apellidosNormalizado)
     }
 
-    const guardarClientDefinitiu = async (telefonoNormalizado) => {
+    const guardarClientDefinitiu = async (telefonoNormalizado, nombreNormalizado, apellidosNormalizado) => {
         setGuardando(true)
         try {
-            const datosAGuardar = { ...formulari, telefono: telefonoNormalizado }
+            const datosAGuardar = { ...formulari, telefono: telefonoNormalizado, nombre: nombreNormalizado, apellidos: apellidosNormalizado }
             const resultado = await InsertTabla('clientes', datosAGuardar)
 
 
@@ -97,7 +104,9 @@ const CrearClient = () => {
 
     const handleConfirmarDuplicat = () => {
         const telefonoNormalizado = normalizarTelefono(formulari.telefono)
-        guardarClientDefinitiu(telefonoNormalizado)
+        const nombreNormalizado = normalizarTexto(formulari.nombre)
+        const apellidosNormalizado = normalizarTexto(formulari.apellidos)
+        guardarClientDefinitiu(telefonoNormalizado, nombreNormalizado, apellidosNormalizado)
     }
 
     const handleCancelarDuplicat = () => {
@@ -116,17 +125,17 @@ return (
       <h2>Crear Client</h2>
 
       <label>
-        Nom
+        <span className='label-text'>Nom <span className='obligatori'>*</span></span>
         <input type='text' name='nombre' value={formulari.nombre} onChange={handleChange} disabled={guardando}/>
       </label>
 
       <label>
-        Cognoms
+        <span className='label-text'>Cognoms <span className='obligatori'>*</span></span>
         <input type='text' name='apellidos' value={formulari.apellidos} onChange={handleChange} disabled={guardando}/>
       </label>
 
       <label>
-        Telèfon
+        <span className='label-text'>Telèfon <span className='obligatori'>*</span></span>
         <input type='text' name='telefono' value={formulari.telefono} onChange={handleChange} disabled={guardando}/>
       </label>
 
@@ -142,12 +151,14 @@ return (
 
       {error && <p className="mensaje-error">{error}</p>}
 
-      <button onClick={handleGuardar} disabled={guardando}>
-      {guardando ? 'Guardant...' : 'Guardar'}
-      </button>
+      <div className="botons-formulari">
+        <button className="boto-cancelar" onClick={handleCancelar} disabled={guardando}>Cancelar</button>
 
-      <button onClick={handleCancelar} disabled={guardando}>Cancelar</button>
-
+        <button className="boto-guardar" onClick={handleGuardar} disabled={guardando}>
+        {guardando ? 'Guardant...' : 'Guardar'}
+        </button>
+      </div>
+      
       {mostrarModal && (
         <div className="modal-overlay">
           <div className="modal-contingut">

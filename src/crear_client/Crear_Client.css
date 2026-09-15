@@ -105,3 +105,26 @@
   gap: 1rem;
   justify-content: flex-end;
 }
+
+.label-text {
+  display: inline-block;
+}
+
+.obligatori {
+  color: red;
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+.botons-formulari {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.crear-client .boto-guardar {
+  background-color: #2563eb;
+}
+
+.crear-client .boto-guardar:hover {
+  background-color: #1d4ed8;
+}
