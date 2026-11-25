@@ -8,7 +8,9 @@ const estadoInicial = {
   pantalla: PANTALLAS.INICIO,
   empleados: [],
   servicios: [],
-  client: null
+  client: null,
+  nomClientReserva: null,
+  idClientReserva: null
 }
 
 export function reducer(state, action) {

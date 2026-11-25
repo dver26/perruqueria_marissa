@@ -3,3 +3,45 @@
 * {
   font-family: 'Poppins', sans-serif;
 }
+
+.avis-reserva {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: fit-content;
+  max-width: calc(100% - 2rem);
+  margin: 1rem 1rem 0.75rem auto;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #e3e0fb;
+  border-radius: 10px;
+  background: #f4f2ff;
+  color: #241b3d;
+  font-size: 0.85rem;
+}
+
+.avis-reserva > span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.avis-reserva button {
+  flex-shrink: 0;
+  border: 1px solid #e3e0fb;
+  border-radius: 6px;
+  padding: 0.4rem 0.75rem;
+  background: #fff;
+  color: inherit;
+  font: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .avis-reserva + .tornar-button {
+    position: static;
+    margin-inline-start: 1rem;
+  }
+}

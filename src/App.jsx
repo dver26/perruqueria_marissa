@@ -31,7 +31,37 @@ function App() {
     cargarDatosIniciales()
   }, [])
 
-  switch (state.pantalla) {
+  const handleCancelarReserva = () => {
+    dispatch({
+      type: ACTIONS.ACTUALITZAR,
+      payload: {
+        nomClientReserva: null,
+        idClientReserva: null,
+        client: null,
+        pantalla: PANTALLAS.INICIO
+      }
+    })
+  }
+
+  return (
+    <>
+      {state.nomClientReserva && state.pantalla && (
+        <div className='avis-reserva'>
+          <span role='status'>
+            Estàs reservant hora per a <strong>{state.nomClientReserva}</strong>
+          </span>
+          <button type='button' onClick={handleCancelarReserva}>
+            Cancel·lar
+          </button>
+        </div>
+      )}
+      {renderPantalla(state.pantalla)}
+    </>
+  )
+}
+
+function renderPantalla(pantalla) {
+  switch (pantalla) {
     case PANTALLAS.INICIO:
       return <CardGrid />
     case PANTALLAS.CONFIGURACIO_CITA:

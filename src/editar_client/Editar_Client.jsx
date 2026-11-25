@@ -7,15 +7,16 @@ import { UpdateTabla } from '../utils/supabase.js'
 const EditarClient = () => {
 
   const { state, dispatch } = useAppContext()
+  const [clientEnEdicio] = useState(state.client)
 
-  const [ formulari, setFormulari ] = useState({
-    nombre: state.client.nombre || '',
-    apellidos: state.client.apellidos || '',
-    telefono: state.client.telefono || '',
-    email: state.client.email || '',
-    observaciones: state.client.observaciones || '',
-    fecha_alta: state.client.fecha_alta || ''
-  })
+  const [ formulari, setFormulari ] = useState(() => ({
+    nombre: clientEnEdicio.nombre || '',
+    apellidos: clientEnEdicio.apellidos || '',
+    telefono: clientEnEdicio.telefono || '',
+    email: clientEnEdicio.email || '',
+    observaciones: clientEnEdicio.observaciones || '',
+    fecha_alta: clientEnEdicio.fecha_alta || ''
+  }))
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -24,7 +25,7 @@ const EditarClient = () => {
 
   const handleGuardar = () => {
 
-    const clientActualitzat = { ...state.client, ...formulari }
+    const clientActualitzat = { ...clientEnEdicio, ...formulari }
     UpdateTabla('clientes', clientActualitzat)
     dispatch({ type: ACTIONS.ACTUALITZAR, payload: { client: null, pantalla: PANTALLAS.INICIO } })
    

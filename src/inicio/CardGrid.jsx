@@ -64,6 +64,9 @@ const CardGrid = () => {
   }
 
   const handleReservarHora = () => {
+    const { id, nombre, apellidos } = state.client
+    const nomClientReserva = [nombre, apellidos].filter(Boolean).join(' ')
+    dispatch({ type: ACTIONS.ACTUALITZAR, payload: { nomClientReserva, idClientReserva: id } })
     setAccions(false)
   }
 
@@ -119,7 +122,7 @@ const CardGrid = () => {
           </ul>
         </div>
       )}
-      {accions && (
+      {accions && state.client && (
         <div className='panell-accions'>
           <div className='capçalera-panell'>
             <p>{state.client.nombre + ' ' + state.client.apellidos}</p>
