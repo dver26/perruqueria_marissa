@@ -144,7 +144,7 @@ const ConfigCita = () => {
                       id={`treballadora-${tarea.id}`}
                     >
                       <option value='Indiferent'>Indiferent</option>
-                      {state.empleados.map((empleado) => {
+                      {state.empleados.filter(e => e.activo && !e.fecha_baja).map((empleado) => {
                         return (
                           <option key={empleado.id} value={empleado.id}>
                             {empleado.nombre}

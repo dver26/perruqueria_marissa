@@ -1,0 +1,52 @@
+.confirmacio {
+  box-sizing: border-box;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: min(460px, calc(100% - 2rem));
+  max-height: calc(100dvh - 2rem);
+  overflow-y: auto;
+  padding: 0;
+  border: 1px solid #e8e6ed;
+  border-radius: 18px;
+  background: #fff;
+  color: #30283f;
+  box-shadow: 0 24px 80px #211a3333;
+}
+
+.confirmacio::backdrop {
+  background: #211a3366;
+  backdrop-filter: blur(3px);
+}
+
+.confirmacio-contingut { padding: 2rem; }
+.confirmacio-etiqueta { font-size: .875rem; font-weight: 500; color: #746584; }
+.confirmacio h2 { margin: .5rem 0 1rem; font-size: 1.5rem; line-height: 1.3; font-weight: 600; }
+.confirmacio-text { color: #625c69; font-size: 1rem; line-height: 1.65; overflow-wrap: anywhere; }
+.confirmacio-text p { margin: 0 0 .75rem; }
+.confirmacio-text strong { color: #30283f; font-weight: 600; }
+.confirmacio-error { padding: .75rem; border-radius: 8px; background: #fef2f2; color: #b91c1c; font-size: .95rem; }
+.confirmacio-botons { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: .75rem; margin-top: 1.75rem; }
+.confirmacio button {
+  min-height: 44px;
+  padding: .65rem 1.15rem;
+  border: 1px solid #dedbe3;
+  border-radius: 8px;
+  background: #f6f5f8;
+  color: #51495d;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color .15s ease;
+}
+.confirmacio button:hover { background: #eae7ee; }
+.confirmacio .confirmacio-acceptar { border-color: #4a4a4a; background: #4a4a4a; color: #fff; }
+.confirmacio .confirmacio-acceptar:hover { background: #333; border-color: #333; }
+.confirmacio button:focus-visible { outline: 2px solid #746584; outline-offset: 3px; }
+.confirmacio button:disabled { opacity: .6; cursor: wait; }
+@media (max-width: 480px) {
+  .confirmacio-contingut { padding: 1.5rem; }
+  .confirmacio-botons button { flex: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .confirmacio button { transition: none; }
+}

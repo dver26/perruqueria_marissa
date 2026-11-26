@@ -153,3 +153,7 @@
 .panell-treballadors li:hover {
   background-color: #e0e0e0;
 }
+
+.panell-treballadors .treballador-inactiu { color: #b91c1c; }
+.panell-treballadors .treballador-inactiu:hover { background: #fee2e2; }
+.estat-treballador { display: inline-block; margin-left: .6rem; font-size: .875rem; font-weight: 600; }

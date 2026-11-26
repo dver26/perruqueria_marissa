@@ -1,0 +1,29 @@
+import { parsePhoneNumberFromString } from 'libphonenumber-js'
+
+export function validarEmail(email) {
+// Funció per validar un email utilitzant una expressió regular
+  const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+  return regex.test(email.trim())
+}
+
+export function validarTelefono(telefono, paisPorDefecto = 'ES') {
+// Funció per validar un número de telèfon utilitzant la llibreria libphonenumber-js
+  try {
+    const phone = parsePhoneNumberFromString(telefono, { defaultCountry: paisPorDefecto, extract: false })
+    return phone ? phone.isValid() : false
+  } catch {
+    return false
+  }
+}
+
+// Pasa el teléfono a formato internacional; si no se puede leer, quita los espacios de los extremos.
+export function normalizarTelefono(telefono, paisPorDefecto = 'ES') {
+  const phone = parsePhoneNumberFromString(telefono, paisPorDefecto)
+  return phone ? phone.number : telefono.trim()
+}
+
+// Quita los espacios que sobran y deja uno solo entre palabras.
+export function normalizarTexto(texto) {
+  if (!texto) return ''
+  return texto.trim().replace(/\s+/g, ' ')
+}

@@ -9,7 +9,9 @@ const estadoInicial = {
   empleados: [],
   servicios: [],
   client: null,
-  treballador: null
+  treballador: null,
+  nomClientReserva: null,
+  idClientReserva: null
 }
 
 export function reducer(state, action) {
