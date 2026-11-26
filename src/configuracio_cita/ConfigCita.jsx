@@ -6,6 +6,7 @@ import { ACTIONS, PANTALLAS, TAULES, TORNS } from '../utils/consts.js'
 
 import './ConfigCita.css'
 
+// Permite elegir la duración, la trabajadora y el turno del servicio.
 const ConfigCita = () => {
   const { state, dispatch } = useAppContext()
 
@@ -16,7 +17,9 @@ const ConfigCita = () => {
   const [duracionsEscollides, setDuracionsEscollides] = useState({})
   const [torn, setTorn] = useState(null)
 
+  // Prepara las opciones del servicio al abrir esta pantalla.
   useEffect(() => {
+    // Busca las tareas del servicio y agrupa sus duraciones por tarea.
     const getPartsIDuracions = async () => {
       const { data, error } = await supabase
         .from(TAULES.TAREAS)
@@ -57,6 +60,7 @@ const ConfigCita = () => {
     getPartsIDuracions()
   }, [])
 
+  // Vuelve a la pantalla de inicio.
   const handleTornarAInici = () => {
     dispatch({
       type: ACTIONS.ACTUALITZAR,
@@ -64,6 +68,7 @@ const ConfigCita = () => {
     })
   }
 
+  // Guarda la duración o la trabajadora elegida para esa tarea.
   const handleCanviSelector = (event, tarea) => {
     if (event.target.id == `duracio-${tarea}`) {
       setDuracionsEscollides({
@@ -78,10 +83,12 @@ const ConfigCita = () => {
     }
   }
 
+  // Guarda el turno que acabamos de elegir.
   const handleCanviTorn = (event) => {
     setTorn(event.target.value)
   }
 
+  // Completa las opciones sin elegir con sus valores por defecto y abre el calendario.
   const handleSubmit = (event) => {
     event.preventDefault()
 

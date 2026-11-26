@@ -215,7 +215,7 @@ const CardGrid = () => {
           </ul>
         </div>
       )}
-      {accionsC && (
+      {accionsC && state.client && (
         <div className='panell-accions'>
           <div className='capçalera-panell'>
             <p>
