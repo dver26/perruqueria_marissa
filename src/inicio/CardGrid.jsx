@@ -242,7 +242,8 @@ const CardGrid = () => {
             </div>
           </div>
           <button disabled={guardant} onClick={() => { setError(''); setConfirmarBaixa(true) }}>Donar de baixa</button>
-          {!state.treballador.activo && !state.treballador.fecha_baja && <button disabled={guardant} onClick={handleActivar}>Posar actiu</button>}
+          {!state.treballador.activo && !state.treballador.fecha_baja && <button disabled={guardant || state.treballador.en_vacaciones} onClick={handleActivar}>Posar actiu</button>}
+          {state.treballador.en_vacaciones && <p className='avis-vacances'>De vacances: podràs activar-lo quan torni.</p>}
           <button disabled={guardant} onClick={() => setAbsencies(true)}>Absències</button>
           <button onClick={() => dispatch({ type: ACTIONS.ACTUALITZAR, payload: { pantalla: PANTALLAS.DIES_FESTA } })}>Dies de festa</button>
           <button onClick={handleEditarT}>Editar dades</button>

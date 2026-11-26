@@ -91,7 +91,7 @@ export default function FormulariPersona({ persona, treballador = false, onGuard
           <label className='label-checkbox'>
             <span>Actiu</span>
             <span className='interruptor-actiu'>
-              <input type='checkbox' role='switch' aria-label='Actiu' name='activo' checked={formulari.activo} onChange={handleChange} />
+              <input type='checkbox' role='switch' aria-label='Actiu' name='activo' checked={formulari.activo} disabled={!!persona?.en_vacaciones} onChange={handleChange} />
               <span className='interruptor-pista' aria-hidden='true' />
             </span>
             <span className='estat-actiu' aria-hidden='true'>{formulari.activo ? 'Activat' : 'Desactivat'}</span>
@@ -101,6 +101,7 @@ export default function FormulariPersona({ persona, treballador = false, onGuard
             <textarea name='observaciones' value={formulari.observaciones} onChange={handleChange} />
           </label>
         )}
+        {treballador && persona?.en_vacaciones && <p>El treballador està de vacances i no es pot activar fins que torni.</p>}
       </fieldset>
       {error && <p className='mensaje-error' role='alert'>{error}</p>}
       <div className='botons-formulari'>

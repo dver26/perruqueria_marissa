@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
+import { dataLocal } from './absencies.js'
 
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
 const supabaseKey = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY
@@ -13,6 +14,17 @@ export async function fetchTabla(nombreTabla) {
   if (error) {
     console.error(`Error cargando ${nombreTabla}:`, error)
     return null
+  }
+  if (nombreTabla === 'empleados') {
+    const ara = dataLocal()
+    const { data: vacances, error: errorVacances } = await supabase.from('ausencias_empleados').select('empleado_id')
+      .eq('tipo', 'vacaciones').lte('fecha_inicio', ara).or(`fecha_fin.is.null,fecha_fin.gt.${ara}`)
+    if (errorVacances) {
+      console.error('Error comprovant les vacances:', errorVacances)
+      return null
+    }
+    const ids = new Set(vacances.map(v => v.empleado_id))
+    return data.map(persona => ({ ...persona, en_vacaciones: ids.has(persona.id) }))
   }
   return data
 }
@@ -33,6 +45,7 @@ export async function UpdateTabla(nombreTabla, fila) {
     : await supabase.from(nombreTabla).update(fila).eq('id', fila.id).select()
   if (error) {
     console.error(`Error actualizando ${nombreTabla}:`, error)
+    if (nombreTabla === 'empleados') throw new Error(error.message)
     return null
   }
   return data
