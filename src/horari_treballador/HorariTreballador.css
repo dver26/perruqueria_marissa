@@ -1,0 +1,23 @@
+.formulari-persona.horari-pagina { max-width: 820px; background: #f7f6fa; padding: 2rem; }
+.horari-pas { display: inline-block; margin-bottom: .6rem; color: #70558c; font-size: .875rem; font-weight: 600; }
+.horari-capcalera p { margin: .75rem 0 0; color: #625c69; line-height: 1.6; }
+.horari-pagina .horari-dies { gap: 1.25rem; }
+.horari-pagina .horari-dia { display: block; border: 1px solid #e1dce9; padding: 1.1rem; background: #fff; border-radius: 12px; }
+.horari-dia legend { font-size: 1.05rem; font-weight: 600; color: #393044; padding: 0 .4rem; }
+.horari-resum { font-size: .875rem; font-weight: 400; color: #776784; margin-left: .65rem; }
+.horari-torns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.horari-torn { padding: .75rem; border: 1px solid #ece9ef; border-radius: 10px; background: #f6f6f7; }
+.horari-torn-actiu { background: #f5f1fc; border-color: #e0d4ef; }
+.horari-pagina .label-checkbox { justify-content: space-between; }
+.horari-hores { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; margin-top: .5rem; }
+.horari-pagina input[type='time'] { background: white; min-height: 44px; padding: .5rem; }
+.horari-pagina input[type='time']:disabled { color: #777; background: #eee; cursor: not-allowed; }
+.horari-accions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.horari-accions button { min-height: 48px; }
+.horari-pagina .horari-accions button:first-child { background: #eae5f4; color: #55416e; }
+.horari-pagina .horari-accions .boto-guardar { background: #654783; }
+.horari-pagina .horari-accions .boto-guardar:hover { background: #52366f; }
+@media (max-width: 580px) {
+  .formulari-persona.horari-pagina { margin: 1rem; padding: 1rem; }
+  .horari-torns { grid-template-columns: minmax(0, 1fr); }
+}

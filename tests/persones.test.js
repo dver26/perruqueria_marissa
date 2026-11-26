@@ -4,6 +4,15 @@ import { buscarDuplicats, guardarPersona, prepararPersona } from '../src/utils/p
 
 const dades = { nombre: 'Anna', apellidos: 'Garcia', telefono: '+34612345678', email: '' }
 
+test('capitalitza noms i cognoms abans de guardar clients i treballadors', () => {
+  for (const camps of [{ observaciones: 'Client' }, { activo: true }]) {
+    const resultat = prepararPersona({ ...dades, ...camps, nombre: '  àlex   joan ', apellidos: 'pérez-puig d’àvila McDonald' })
+    assert.equal(resultat.nombre, 'Àlex Joan')
+    assert.equal(resultat.apellidos, 'Pérez-Puig D’Àvila McDonald')
+    assert.deepEqual(prepararPersona(resultat), resultat)
+  }
+})
+
 test('normalitza espais, telèfon i correu sense perdre Actiu o observacions', () => {
   assert.deepEqual(prepararPersona({ ...dades, nombre: '  Anna   Maria ', telefono: '612 34 56 78', email: ' anna@example.com ', activo: false, observaciones: 'Nota' }), {
     ...dades, nombre: 'Anna Maria', email: 'anna@example.com', activo: false, observaciones: 'Nota'

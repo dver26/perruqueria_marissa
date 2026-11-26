@@ -14,10 +14,10 @@ export default function CrearTreballador() {
   // Actualiza la selección y la lista de empleados después de confirmar el guardado.
   const handleGuardat = personaGuardada => {
     dispatch({ type: ACTIONS.ACTUALITZAR, payload: {
-      treballador: personaGuardada, pantalla: PANTALLAS.INICIO,
+      treballador: personaGuardada, pantalla: PANTALLAS.HORARI_TREBALLADOR, altaHorari: true,
       empleados: [...state.empleados.filter(p => p.id !== personaGuardada.id), personaGuardada]
     } })
   }
 
-  return <FormulariPersona treballador onGuardat={handleGuardat} onCancelar={handleCancelar} />
+  return <FormulariPersona treballador descripcio='Pas 1 de 2 · Dades personals. Després configuraràs l’horari setmanal.' textGuardar='Guardar dades i continuar' onGuardat={handleGuardat} onCancelar={handleCancelar} />
 }

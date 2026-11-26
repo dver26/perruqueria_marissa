@@ -4,7 +4,7 @@ import { guardarPersona, prepararPersona } from '../utils/persones.js'
 import './FormulariPersona.css'
 
 // Comparte las comprobaciones y el aspecto de los formularios de clientes y trabajadores.
-export default function FormulariPersona({ persona, treballador = false, onGuardat, onCancelar }) {
+export default function FormulariPersona({ persona, treballador = false, onGuardat, onCancelar, textGuardar = 'Guardar', descripcio }) {
   const [formulari, setFormulari] = useState(() => ({
     nombre: persona?.nombre ?? '',
     apellidos: persona?.apellidos ?? '',
@@ -75,6 +75,7 @@ export default function FormulariPersona({ persona, treballador = false, onGuard
     <form className='formulari-persona' onSubmit={handleSubmit} noValidate aria-label={titol}>
       <div className='formulari-persona-camps'>
       <h2>{titol}</h2>
+      {descripcio && <p>{descripcio}</p>}
       {treballador && anterior && <p role='status'>Reactivant la fitxa anterior. Es conservarà l’historial. Revisa les dades i prem Guardar.</p>}
       <fieldset disabled={guardando || duplicats.length > 0}>
         {[
@@ -105,7 +106,7 @@ export default function FormulariPersona({ persona, treballador = false, onGuard
       <div className='botons-formulari'>
         <button type='button' onClick={onCancelar} disabled={guardando || duplicats.length > 0}>Cancelar</button>
         <button type='submit' className='boto-guardar' disabled={guardando || duplicats.length > 0}>
-          {guardando ? 'Guardant...' : 'Guardar'}
+          {guardando ? 'Guardant...' : textGuardar}
         </button>
       </div>
       </div>

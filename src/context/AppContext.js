@@ -10,6 +10,7 @@ const estadoInicial = {
   servicios: [],
   client: null,
   treballador: null,
+  altaHorari: false,
   nomClientReserva: null,
   idClientReserva: null
 }

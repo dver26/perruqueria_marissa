@@ -165,7 +165,7 @@ const CardGrid = () => {
         confirmar='Donar de baixa' ocupat={guardant} error={error}
         onConfirmar={handleBaixa} onCancelar={() => { setConfirmarBaixa(false); setError('') }}>
         <p>Vols donar de baixa <strong>{state.treballador.nombre} {state.treballador.apellidos}</strong>?</p>
-        <p>Es conservaran les seves dades i l’historial. Podràs recuperar la fitxa si torna a treballar aquí.</p>
+        <p>Es conservaran la seva fitxa i l’historial de cites, però s’eliminaran totes les seves absències. Podràs recuperar la fitxa si torna a treballar aquí.</p>
       </Confirmacio>}
       <div className='botons'>
         <button className='boto-clients' onClick={handleClickC}>
@@ -244,7 +244,9 @@ const CardGrid = () => {
           <button disabled={guardant} onClick={() => { setError(''); setConfirmarBaixa(true) }}>Donar de baixa</button>
           {!state.treballador.activo && !state.treballador.fecha_baja && <button disabled={guardant} onClick={handleActivar}>Posar actiu</button>}
           <button disabled={guardant} onClick={() => setAbsencies(true)}>Absències</button>
-          <button onClick={handleEditarT}>Editar</button>
+          <button onClick={() => dispatch({ type: ACTIONS.ACTUALITZAR, payload: { pantalla: PANTALLAS.DIES_FESTA } })}>Dies de festa</button>
+          <button onClick={handleEditarT}>Editar dades</button>
+          <button onClick={() => dispatch({ type: ACTIONS.ACTUALITZAR, payload: { pantalla: PANTALLAS.HORARI_TREBALLADOR, altaHorari: false } })}>Editar horari</button>
 
         </div>
       )}

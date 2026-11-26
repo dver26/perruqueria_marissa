@@ -9,6 +9,8 @@ import ConfigCita from './configuracio_cita/ConfigCita.jsx'
 import Editar_Client from './editar_client/Editar_Client.jsx'
 import Editar_Treballador from './editar_treballador/Editar_Treballador.jsx'
 import Crear_Treballador from './crear_treballador/Crear_Treballador.jsx'
+import HorariTreballador from './horari_treballador/HorariTreballador.jsx'
+import DiesFesta from './dies_festa/DiesFesta.jsx'
 
 import './App.css'
 import Calendari from './calendari/Calendari.jsx'
@@ -83,6 +85,10 @@ function renderPantalla(pantalla) {
       return <Editar_Treballador />
     case PANTALLAS.CREAR_TREBALLADOR:
       return <Crear_Treballador />
+    case PANTALLAS.HORARI_TREBALLADOR:
+      return <HorariTreballador />
+    case PANTALLAS.DIES_FESTA:
+      return <DiesFesta />
     case PANTALLAS.CREAR_CLIENT:
       return <Crear_Client />
     default:

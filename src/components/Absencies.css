@@ -1,0 +1,73 @@
+.formulari-persona.absencies-pagina {
+  max-width: 1080px;
+  margin: 1.5rem auto;
+  padding: 0 1.5rem;
+  background: transparent;
+  box-shadow: none;
+}
+.absencies-distribucio {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 1.5rem;
+}
+.absencies-formulari, .absencies-registre {
+  min-width: 0;
+  padding: 1.5rem;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px #00000014;
+}
+.absencies-formulari { display: flex; flex-direction: column; gap: 1rem; }
+.absencies-pagina h3 { margin: 0 0 1.25rem; font-size: 1.15rem; color: #333; }
+.absencies-pagina input:disabled { background: #e9e9ed; color: #625c69; cursor: not-allowed; }
+.absencies-pagina .botons-formulari { justify-content: flex-start; }
+.absencia-accions-finals { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .85rem; margin-top: 1.25rem; }
+.absencies-pagina .absencia-accions-finals button {
+  width: 100%;
+  min-height: 48px;
+  padding: .75rem .65rem;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-weight: 500;
+  line-height: 1.4;
+  transition: background-color .15s ease, box-shadow .15s ease;
+}
+.absencies-pagina .boto-confirmar-absencia { background: #654783; color: #fff; box-shadow: 0 2px 5px #55416e20; }
+.absencies-pagina .boto-confirmar-absencia:hover { background: #52366f; }
+.absencies-pagina .boto-tornar-absencia { background: #eae5f4; color: #55416e; border-color: #dcd2e8; }
+.absencies-pagina .boto-tornar-absencia:hover { background: #ddd4ec; }
+.absencia-accions-finals button:focus-visible { outline: 2px solid #765494; outline-offset: 3px; }
+.absencia-inici { display: flex; align-items: flex-end; gap: .75rem; }
+.absencia-inici label { flex: 1; min-width: 0; }
+.absencies-pagina .boto-inici-ara { flex-shrink: 0; min-height: 44px; padding: .5rem .85rem; background: #eae5f4; color: #55416e; }
+.absencies-pagina .boto-inici-ara:hover { background: #ddd4ec; }
+.absencies-pagina .boto-inici-ara[aria-pressed='true'] { background: #55416e; color: #fff; }
+.absencia-avis-ara { margin: 0; color: #625675; font-size: .875rem; }
+.absencies-pagina .absencies-registre { background: #f3f2f8; }
+.absencies-pagina .llista-absencies li { border-color: #e2dfeb; border-left: 4px solid #a78bfa; }
+.absencies-pagina .llista-absencies .absencia-en-curs { border-left-color: #34a887; }
+.absencia-capcalera { display: flex; align-items: center; flex-wrap: wrap; gap: .65rem .85rem; }
+.absencies-pagina .estat-absencia {
+  padding: .3rem .65rem;
+  border-radius: 6px;
+  background: #ede9fe;
+  color: #5b21b6;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+.absencies-pagina .absencia-en-curs .estat-absencia { background: #def5eb; color: #17674f; }
+.absencia-motiu { color: #393044; font-size: 1rem; font-weight: 600; overflow-wrap: anywhere; min-width: 0; }
+.absencia-computo { color: #5e5868; font-size: .875rem; border: 1px solid #ded7e7; border-radius: 6px; padding: .25rem .55rem; }
+.absencia-dates { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: .65rem 1rem; margin: 1.25rem 0; align-items: baseline; }
+.absencia-dates dt { color: #746b80; font-size: .875rem; }
+.absencia-dates dd { margin: 0; color: #393044; font-size: 1rem; font-weight: 500; font-variant-numeric: tabular-nums; }
+.absencies-pagina .boto-editar-absencia { background: #eae5f4; color: #55416e; }
+.absencies-pagina .boto-editar-absencia:hover { background: #ddd4ec; }
+.absencies-pagina .boto-eliminar-absencia { background: #fce9e9; color: #a33030; }
+.absencies-pagina .boto-eliminar-absencia:hover { background: #f8d6d6; }
+@media (max-width: 760px) {
+  .absencies-distribucio { grid-template-columns: minmax(0, 1fr); }
+  .formulari-persona.absencies-pagina { margin: 1rem auto; padding: 0 1rem; }
+  .absencies-formulari, .absencies-registre { padding: 1rem; }
+}

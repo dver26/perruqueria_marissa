@@ -1,9 +1,14 @@
 import { normalizarTexto, normalizarTelefono, validarEmail, validarTelefono } from './validacions.js'
 
+// Capitaliza las iniciales sin cambiar el resto (p. ej., McDonald).
+function normalizarNombre(texto) {
+  return normalizarTexto(texto).replace(/(^|[\s'’-])(\p{L})/gu, (_, separador, inicial) => separador + inicial.toLocaleUpperCase('ca'))
+}
+
 // Deja los datos listos para guardar y avisa si falta algo o el formato no encaja.
 export function prepararPersona(formulari) {
-  const nombre = normalizarTexto(formulari.nombre)
-  const apellidos = normalizarTexto(formulari.apellidos)
+  const nombre = normalizarNombre(formulari.nombre)
+  const apellidos = normalizarNombre(formulari.apellidos)
   if (!nombre || !apellidos || !formulari.telefono.trim()) {
     throw new Error('Nom, cognoms i telèfon són obligatoris')
   }

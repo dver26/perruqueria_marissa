@@ -1,0 +1,42 @@
+.formulari-persona.festes-pagina { max-width: 800px; background: #f7f6fa; padding: 1.75rem; }
+.festes-capcalera { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+.festes-subtitol { display: block; color: #776289; font-size: .875rem; margin-bottom: .5rem; }
+.festes-comptador { background: #ece5f7; border-radius: 12px; padding: 1rem; color: #55416e; max-width: 170px; }
+.festes-comptador strong { display: block; font-size: 2rem; line-height: 1.2; }
+.festes-comptador span { font-size: .875rem; }
+.festes-controls p { margin: .65rem 0; color: #625c69; line-height: 1.6; }
+.festes-llegenda { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; font-size: .875rem; }
+.festes-llegenda-festa { color: #654783; }
+.festes-seleccio { background: #ede8f7; padding: .75rem; border-radius: 8px; color: #55416e; line-height: 1.8; }
+.festes-seleccio button { margin: .5rem 0 0 .75rem; }
+.festes-estat { margin: 0; color: #286550; min-height: 1.5em; }
+.festes-calendari { max-height: 65vh; min-height: 320px; overflow-y: auto; padding: 1rem; background: white; border: 1px solid #ded7e7; border-radius: 12px; scrollbar-gutter: stable; }
+.festes-mes { margin-bottom: 2rem; }
+.festes-mes-capcalera { position: sticky; top: -1rem; z-index: 1; background: #fff; padding: .8rem .3rem; margin-bottom: .5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .65rem; }
+.festes-mes h3 { margin: 0; color: #55416e; text-transform: capitalize; }
+.festes-pagina .festes-eliminar-mes { min-height: 44px; padding: .5rem .75rem; background: #fce9e9; color: #963333; font-size: .875rem; }
+.festes-pagina .festes-eliminar-mes:hover { background: #f5caca; }
+.festes-setmana, .festes-dies { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: .4rem; }
+.festes-setmana { margin-bottom: .5rem; text-align: center; color: #80758a; font-size: .875rem; }
+.festes-pagina .festes-dia { min-width: 0; min-height: 48px; padding: .5rem .2rem; border: 1px solid #e7e1ee; border-radius: 8px; background: #fff; color: #3b3046; font-size: 1rem; }
+.festes-pagina .festes-dia:hover { background: #eee7f7; border-color: #9a7bb7; }
+.festes-pagina .festes-descans { background: #eaeaec; color: #77737c; border-color: #eaeaec; }
+.festes-pagina .festes-guardat { background: #e0d2f0; color: #50306f; border-color: #ac8acb; font-weight: 600; }
+.festes-pagina .festes-triat { background: #775496; color: #fff; border-color: #654783; }
+.festes-pagina .festes-avui { box-shadow: inset 0 0 0 2px #8c6ba9; }
+.festes-pagina .festes-dia:disabled { cursor: default; opacity: .55; }
+.festes-pagina .festes-guardat:disabled { opacity: 1; }
+.festes-controls .festes-avis-eliminar { background: #fce9e9; border-radius: 8px; padding: .75rem; color: #963333; }
+.festes-pagina .festes-eliminable { background: #fce9e9; border-color: #dba2a2; color: #963333; }
+.festes-pagina .festes-eliminable:hover { background: #f5caca; border-color: #ad5555; }
+.festes-pagina .festes-dia:focus-visible { outline: 3px solid #775496; outline-offset: 1px; }
+.festes-pagina .festes-mesos-mes { width: 100%; background: #ede7f5; color: #55416e; }
+.festes-nota { margin: 0; font-size: .875rem; color: #776d80; line-height: 1.6; }
+@media (max-width: 580px) {
+ .formulari-persona.festes-pagina { margin: 1rem .5rem; padding: 1rem; }
+ .festes-capcalera { align-items: flex-start; }
+ .festes-comptador { max-width: 110px; padding: .7rem; }
+ .festes-calendari { padding: .5rem; }
+ .festes-setmana, .festes-dies { gap: .2rem; }
+ .festes-pagina .festes-dia { min-height: 42px; }
+}
