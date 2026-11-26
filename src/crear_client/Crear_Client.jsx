@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { InsertTabla, BuscarPorCampo } from '../utils/supabase.js'
 import { validarEmail, validarTelefono, normalizarTelefono, normalizarTexto } from '../utils/validacions.js'
 
+// Muestra el formulario de alta y los avisos si ya hay un cliente parecido.
 const CrearClient = () => {
     const { dispatch } = useAppContext()
 
@@ -22,12 +23,14 @@ const CrearClient = () => {
     const [mostrarModal, setMostrarModal] = useState(false)
     const [motiuDuplicat, setMotiuDuplicat] = useState('') // 'nom' o 'telefon'
 
+    // Actualiza el campo que estamos escribiendo y limpia el aviso de error.
     const handleChange = (e) => {
         const { name, value } = e.target
         setError('')
         setFormulari(prev => ({ ...prev, [name]: value }))
     }
   
+    // Revisa los datos y los posibles duplicados antes de guardar el cliente.
     const handleGuardar = async () => {
         if (!formulari.nombre.trim() || !formulari.apellidos.trim() || !formulari.telefono.trim()) {
             setError('Nom, cognoms i telèfon són obligatoris')
@@ -82,6 +85,7 @@ const CrearClient = () => {
         await guardarClientDefinitiu(telefonoNormalizado, nombreNormalizado, apellidosNormalizado)
     }
 
+    // Guarda los datos ya normalizados y vuelve al inicio si todo va bien.
     const guardarClientDefinitiu = async (telefonoNormalizado, nombreNormalizado, apellidosNormalizado) => {
         setGuardando(true)
         try {
@@ -102,6 +106,7 @@ const CrearClient = () => {
         }
     }
 
+    // Crea el cliente igualmente cuando confirmamos el aviso de duplicado.
     const handleConfirmarDuplicat = () => {
         const telefonoNormalizado = normalizarTelefono(formulari.telefono)
         const nombreNormalizado = normalizarTexto(formulari.nombre)
@@ -109,11 +114,13 @@ const CrearClient = () => {
         guardarClientDefinitiu(telefonoNormalizado, nombreNormalizado, apellidosNormalizado)
     }
 
+    // Cierra el aviso de duplicado para seguir revisando el formulario.
     const handleCancelarDuplicat = () => {
         setMostrarModal(false)
         setClientsCoincidents([])
     }
 
+    // Sale del formulario y vuelve al inicio sin crear el cliente.
     const handleCancelar = () => {
         dispatch({ type: ACTIONS.ACTUALITZAR, payload: { client: null, pantalla: PANTALLAS.INICIO } })
 

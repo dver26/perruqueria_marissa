@@ -4,11 +4,13 @@ import { useState } from 'react'
 import './Editar_Client.css'
 import { UpdateTabla } from '../utils/supabase.js'
 
+// Muestra el formulario con los datos del cliente que vamos a editar.
 const EditarClient = () => {
 
   const { state, dispatch } = useAppContext()
   const [clientEnEdicio] = useState(state.client)
 
+  // Copia los datos del cliente al abrir el formulario.
   const [ formulari, setFormulari ] = useState(() => ({
     nombre: clientEnEdicio.nombre || '',
     apellidos: clientEnEdicio.apellidos || '',
@@ -18,11 +20,13 @@ const EditarClient = () => {
     fecha_alta: clientEnEdicio.fecha_alta || ''
   }))
 
+  // Actualiza en el formulario el campo que acabamos de cambiar.
   const handleChange = (e) => {
     const { name, value } = e.target
     setFormulari(prev => ({ ...prev, [name]: value }))
   }
 
+  // Envía los cambios del cliente a la base de datos y vuelve al inicio.
   const handleGuardar = () => {
 
     const clientActualitzat = { ...clientEnEdicio, ...formulari }
@@ -31,6 +35,7 @@ const EditarClient = () => {
    
   }
 
+  // Vuelve al inicio sin guardar los cambios del formulario.
   const handleCancelar = () => {
   dispatch({ type: ACTIONS.ACTUALITZAR, payload: { client: null, pantalla: PANTALLAS.INICIO } })
 }

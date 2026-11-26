@@ -15,6 +15,7 @@ export async function fetchTabla(nombreTabla) {
   return data
 }
 
+// Carga varias tablas a la vez y agrupa los datos por nombre de tabla.
 export async function fetchTablas(nombresTablas) {
   const resultados = await Promise.all(
     nombresTablas.map(async (tabla) => [tabla, await fetchTabla(tabla)])
@@ -23,6 +24,7 @@ export async function fetchTablas(nombresTablas) {
 }
 
 
+// Busca la fila por su ID, guarda los cambios y devuelve los datos actualizados.
 export async function UpdateTabla(nombreTabla, fila) {
   const { data, error } = await supabase.from(nombreTabla).update(fila).eq('id', fila.id).select()
   if (error) {
@@ -32,6 +34,7 @@ export async function UpdateTabla(nombreTabla, fila) {
   return data
 }
 
+// Borra la fila con ese ID y devuelve lo que se ha eliminado.
 export async function DeleteTabla(nombreTabla, fila) {
   const { data, error } = await supabase.from(nombreTabla).delete(fila).eq('id', fila.id).select()
   if (error) {
@@ -41,6 +44,7 @@ export async function DeleteTabla(nombreTabla, fila) {
   return data
 }
 
+// Añade una fila a la tabla y devuelve los datos que se han guardado.
 export async function InsertTabla(nombreTabla, fila) {
   const { data, error } = await supabase.from(nombreTabla).insert(fila).select()
   if (error) {
@@ -50,6 +54,7 @@ export async function InsertTabla(nombreTabla, fila) {
   return data
 }
 
+// Busca las filas cuyo campo coincide exactamente con el valor que le pasamos.
 export async function BuscarPorCampo(nombreTabla, campo, valor) {
   const { data, error } = await supabase.from(nombreTabla).select('*').eq(campo, valor)
   if (error) {

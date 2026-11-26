@@ -12,10 +12,13 @@ import './App.css'
 import Calendari from './calendari/Calendari.jsx'
 import VisorDia from './visor_dia/VisorDia.jsx'
 
+// Arranca la app y muestra la pantalla actual junto al aviso de reserva, si lo hay.
 function App() {
   const { state, dispatch } = useAppContext()
 
+  // Carga los datos de inicio al montar la app.
   useEffect(() => {
+    // Trae servicios y empleados y los guarda en el estado compartido.
     const cargarDatosIniciales = async () => {
       const datos = await fetchTablas([TAULES.SERVICIOS, TAULES.EMPLEADOS])
       const fallo = Object.entries(datos).find(([, valor]) => valor === null) // busquem si ha hagut algun fallo en algun fetch
@@ -31,6 +34,7 @@ function App() {
     cargarDatosIniciales()
   }, [])
 
+  // Quita el cliente de la reserva y vuelve al inicio.
   const handleCancelarReserva = () => {
     dispatch({
       type: ACTIONS.ACTUALITZAR,
@@ -60,6 +64,7 @@ function App() {
   )
 }
 
+// Elige qué componente mostrar según la pantalla guardada en el estado.
 function renderPantalla(pantalla) {
   switch (pantalla) {
     case PANTALLAS.INICIO:

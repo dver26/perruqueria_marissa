@@ -16,11 +16,13 @@ export function validarTelefono(telefono, paisPorDefecto = 'ES') {
   }
 }
 
+// Pasa el teléfono a formato internacional; si no se puede leer, quita los espacios de los extremos.
 export function normalizarTelefono(telefono, paisPorDefecto = 'ES') {
   const phone = parsePhoneNumberFromString(telefono, paisPorDefecto)
   return phone ? phone.number : telefono.trim()
 }
 
+// Quita los espacios que sobran y deja uno solo entre palabras.
 export function normalizarTexto(texto) {
   if (!texto) return ''
   return texto

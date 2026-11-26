@@ -13,6 +13,7 @@ const estadoInicial = {
   idClientReserva: null
 }
 
+// Mezcla los cambios recibidos con el estado actual de la app.
 export function reducer(state, action) {
   switch (action.type) {
     case ACTIONS.ACTUALITZAR:

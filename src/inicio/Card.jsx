@@ -3,11 +3,13 @@ import { ACTIONS, PANTALLAS } from '../utils/consts.js'
 
 import './Card.css'
 
+// Muestra la tarjeta de un servicio para poder seleccionarlo.
 const Card = ({ id }) => {
   const { state, dispatch } = useAppContext()
 
   const servei = state.servicios.find((servicio) => servicio.id === id)
 
+  // Guarda el servicio elegido y abre la configuración de la cita.
   const handleClick = () => {
     dispatch({
       type: ACTIONS.ACTUALITZAR,

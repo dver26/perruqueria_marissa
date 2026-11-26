@@ -12,6 +12,7 @@ import { useEffect, useState } from 'react'
 
 import { ACTIONS, PANTALLAS } from '../utils/consts.js'
 
+// Muestra los servicios y el panel para buscar clientes y elegir qué hacer con ellos.
 const CardGrid = () => {
   const { state, dispatch } = useAppContext()
 
@@ -20,6 +21,7 @@ const CardGrid = () => {
   const [cerca, setCerca] = useState('')
   const [accions, setAccions] = useState(false)
 
+  // Carga la lista de clientes al entrar en esta pantalla.
   useEffect(() => {
     const Taula_clients = async () => {
       const data = await fetchTabla('clientes')
@@ -45,6 +47,7 @@ const CardGrid = () => {
     
   }
 
+  // Abre el formulario para crear un cliente.
   const handleClickCC = () => {
     dispatch({
       type: ACTIONS.ACTUALITZAR,
@@ -52,17 +55,20 @@ const CardGrid = () => {
     })
   }
 
+  // Guarda el cliente elegido y muestra sus acciones.
   const handleSeleccionarClient = (client_temp) => {
     dispatch({ type: ACTIONS.ACTUALITZAR, payload: { client: client_temp } })
     setPanell(false)
     setAccions(true)
   }
 
+  // Quita la selección del cliente y cierra sus acciones.
   const handleEnrere = () => {
     dispatch({ type: ACTIONS.ACTUALITZAR, payload: { client: null } })
     setAccions(false)
   }
 
+  // Guarda para quién será la reserva y cierra el panel de acciones.
   const handleReservarHora = () => {
     const { id, nombre, apellidos } = state.client
     const nomClientReserva = [nombre, apellidos].filter(Boolean).join(' ')
@@ -70,6 +76,7 @@ const CardGrid = () => {
     setAccions(false)
   }
 
+  // Abre el formulario para editar el cliente seleccionado.
   const handleEditar = () => {
     dispatch({
       type: ACTIONS.ACTUALITZAR,
@@ -77,6 +84,7 @@ const CardGrid = () => {
     })
   }
 
+  // Pasa el texto a minúsculas y quita las tildes para facilitar la búsqueda.
   const netejarText = (text) =>
     text
       .toLowerCase()
@@ -85,6 +93,7 @@ const CardGrid = () => {
 
   const cercaNetejada = netejarText(normalizarTexto(cerca))
 
+  // Busca lo escrito en el nombre y los apellidos, sin distinguir tildes ni mayúsculas.
   const clientsFiltrats = clients.filter((client_temp) => {
     const nomComplet = netejarText(
       normalizarTexto(client_temp.nombre + ' ' + client_temp.apellidos)
