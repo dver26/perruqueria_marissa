@@ -5,6 +5,9 @@
 }
 
 .avis-reserva {
+  position: sticky;
+  top: 1rem;
+  z-index: 20;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -20,11 +23,18 @@
   font-size: 0.85rem;
 }
 
-.avis-reserva > span {
+.avis-reserva-text {
+  display: flex;
+  gap: 0.35rem;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.avis-reserva-client,
+.avis-reserva-servei {
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .avis-reserva button {
@@ -40,6 +50,19 @@
 }
 
 @media (max-width: 600px) {
+  .avis-reserva-servei {
+    flex-shrink: 0;
+    max-width: 55%;
+  }
+
+  .avis-reserva-text:has(.avis-reserva-servei) .avis-reserva-prefix {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+
   .avis-reserva + .tornar-button {
     position: static;
     margin-inline-start: 1rem;

@@ -1,6 +1,6 @@
 // AppContext.js  (solo el contexto y el reducer, sin componentes)
 import { createContext } from 'react'
-import { ACTIONS, PANTALLAS } from '../utils/consts.js'
+import { ACTIONS, PANTALLAS, RESERVA_BUIDA } from '../utils/consts.js'
 
 export const AppContext = createContext(null)
 
@@ -11,8 +11,7 @@ const estadoInicial = {
   client: null,
   treballador: null,
   altaHorari: false,
-  nomClientReserva: null,
-  idClientReserva: null
+  ...RESERVA_BUIDA
 }
 
 export function reducer(state, action) {

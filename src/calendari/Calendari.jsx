@@ -7,15 +7,14 @@ import './Calendari.css'
 import { useAppContext } from '../context/useAppContext'
 import { ACTIONS, PANTALLAS } from '../utils/consts.js'
 
-// Muestra el calendario para elegir el día de la cita.
-function Calendari() {
-  const { dispatch } = useAppContext()
+function Calendari({ resum = false }) {
+  const { state, dispatch } = useAppContext()
 
   // Vuelve a las opciones del servicio para poder cambiarlas.
   const handleTornarEnrere = () => {
     dispatch({
       type: ACTIONS.ACTUALITZAR,
-      payload: { pantalla: PANTALLAS.CONFIGURACIO_CITA }
+      payload: { pantalla: resum ? PANTALLAS.INICIO : PANTALLAS.CONFIGURACIO_CITA }
     })
   }
 
@@ -23,19 +22,22 @@ function Calendari() {
   const handleClickData = (info) => {
     dispatch({
       type: ACTIONS.ACTUALITZAR,
-      payload: { data: info.date, pantalla: PANTALLAS.VISOR_DIA }
+      payload: resum
+        ? { dataResum: info.date, pantalla: PANTALLAS.RESUM_DIA }
+        : { data: info.date, pantalla: PANTALLAS.VISOR_DIA }
     })
   }
 
   return (
     <>
-      <button className='tornar-button' onClick={handleTornarEnrere}>
+      <button className={resum ? 'tornar-button resum-calendari-enrere' : 'tornar-button'} onClick={handleTornarEnrere}>
         Tornar Enrere
       </button>
       <div className='calendari-embolcall'>
         <FullCalendar
           plugins={[dayGridPlugin, interactionPlugin]}
           initialView='dayGridMonth'
+          initialDate={resum ? state.dataResum : state.data}
           locale={caLocale}
           firstDay={1}
           height='auto'

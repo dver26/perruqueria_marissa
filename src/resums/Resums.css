@@ -1,0 +1,235 @@
+.selector-treballadora {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 0.6rem;
+  width: fit-content;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.selector-treballadora select {
+  padding: 0.4rem 2.2rem 0.4rem 0.75rem;
+  border: 1px solid #d9cbee;
+  border-radius: 0.6rem;
+  background: #f6f0ff;
+  color: #382355;
+  font: inherit;
+  cursor: pointer;
+}
+
+.tornar-button.resum-calendari-enrere {
+  position: static;
+  margin: 0.75rem 1rem 1rem;
+}
+
+.visor-diari {
+  gap: 0.6rem;
+  padding-block: clamp(0.5rem, 1.8dvh, 0.9rem);
+}
+
+.visor-diari .visor-capcalera {
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.55rem 0.8rem;
+  padding: 0.55rem 0.8rem;
+  border-radius: 0.9rem;
+}
+
+.visor-diari .visor-capcalera h1 { grid-area: 1 / 2; font-size: clamp(1rem, 2vw, 1.55rem); }
+.visor-diari .visor-capcalera button { min-height: 1.85rem; padding: 0.2rem 0.55rem; }
+.visor-diari .visor-navegacio button { min-width: 1.85rem; }
+.visor-diari .visor-torn-seleccionat { font-size: 0.7rem; }
+.visor-diari .visor-horaris { padding: clamp(0.55rem, 1.65dvh, 0.95rem); }
+
+.visor-diari .visor-jornada {
+  --amplada-escala: clamp(2.5rem, 4vw, 3.15rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
+}
+
+.visor-diari .visor-jornada:focus-visible { outline: 2px solid #6941bd; outline-offset: 2px; }
+
+.visor-diari .visor-tauler {
+  --cap-visor: 1.8rem;
+  --peu-visor: 2.4rem;
+  --mida-tram: 1.8rem;
+  grid-template-columns: minmax(0, 1fr);
+  box-sizing: border-box;
+  height: min(100%, clamp(20rem, calc(var(--trams-visor) * var(--mida-tram) + var(--cap-visor) + var(--peu-visor)), 50rem));
+  min-height: calc(var(--trams-visor) * 0.9rem + var(--cap-visor) + var(--peu-visor) + 0.55rem);
+  flex: none;
+}
+
+.visor-diari .visor-treballadora { grid-template-columns: var(--amplada-escala) minmax(0, 1fr); }
+.visor-diari :is(.visor-persona, .visor-pista, .visor-resum-franges) { grid-column: 2; }
+.visor-diari .visor-escala {
+  grid-area: 2 / 1;
+  margin-block: 0;
+  font-size: clamp(0.66rem, 1vw, 0.79rem);
+  line-height: 1;
+}
+
+.visor-diari .visor-escala span { right: 0.35rem; }
+.visor-diari .visor-inicials { width: 1.3rem; font-size: 0.7rem; }
+.visor-diari .visor-persona h2 { font-size: 0.82rem; }
+.visor-diari .visor-torn { background-size: 100% var(--pas-escala), auto; }
+
+.visor-diari .visor-ocupada {
+  display: grid;
+  container-type: size;
+  place-items: center;
+  overflow: hidden;
+  padding-inline: 0.25rem;
+  color: #fff;
+}
+
+.visor-nom-tasca {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: clamp(0.5rem, min(94cqh, 10cqw), 0.86rem);
+  font-weight: 600;
+  line-height: 1;
+}
+
+@container (min-height: 1.55rem) {
+  .visor-nom-tasca {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    text-align: center;
+  }
+}
+
+.visor-detall {
+  padding: 0.65rem 0 0.25rem;
+  border-top: 1px solid var(--vora-visor);
+}
+
+.visor-detall h2 { margin: 0 0 0.5rem var(--amplada-escala); font-size: 0.95rem; }
+.visor-detall h3 { margin: 0 0 0.3rem; font-size: 0.8rem; }
+.visor-detall p { margin: 0; color: #665a78; font-size: 0.75rem; }
+
+.visor-feines-grups {
+  display: grid;
+  grid-template-columns: repeat(var(--columnes-visor), minmax(0, 1fr));
+  gap: var(--separacio-columnes);
+}
+
+.visor-feines-grups > section { padding-inline-start: var(--amplada-escala); }
+
+.visor-feines {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visor-feines li {
+  display: grid;
+  gap: 0.1rem;
+  padding: 0.4rem 0.6rem;
+  border-left: 3px solid #a62947;
+  border-radius: 0.35rem;
+  background: #fbf2f5;
+  font-size: 0.75rem;
+}
+
+.visor-feines time { color: #8d223d; font-variant-numeric: tabular-nums; }
+.visor-feines li > span { color: #665a78; font-size: 0.7rem; }
+
+body:has(.resum-setmanal) { overflow: auto; }
+#root:has(> .resum-setmanal) { height: auto; min-height: 100dvh; overflow: visible; }
+
+.resum-setmana-contingut {
+  padding: clamp(0.7rem, 2vw, 1.5rem);
+  border: 1px solid #e8e0f0;
+  border-radius: 1.15rem;
+  background: #fff;
+}
+
+.resum-setmana-dies {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.55rem;
+  margin: 0.9rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resum-setmana-dia {
+  position: relative;
+  min-width: 0;
+  min-height: 10rem;
+  padding: 0.65rem 0.55rem;
+  border: 1px solid #ece4f5;
+  border-radius: 0.65rem;
+  background: #faf7fd;
+}
+
+.resum-setmana-dia[aria-current='date'] { border-color: #9568df; }
+.resum-setmana-dia h2 { margin: 0; padding-inline-end: 0.75rem; font-size: clamp(0.73rem, 1.35vw, 1rem); text-transform: capitalize; }
+.resum-setmana-dia > time { color: #665a78; font-size: 0.72rem; }
+.resum-setmana-total { margin: 0.7rem 0 0.45rem; color: #543389; font-size: clamp(0.88rem, 1.75vw, 1.25rem); font-weight: 700; }
+.resum-setmana-total span { font-size: 0.68rem; font-weight: 500; white-space: nowrap; }
+.resum-setmana-buit { margin: 0.65rem 0 0; color: #665a78; font-size: 0.72rem; }
+
+.resum-setmana-obrir {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  border-radius: inherit;
+  background: transparent;
+  color: #543389;
+  cursor: pointer;
+}
+
+.resum-setmana-obrir span { position: absolute; top: 0.35rem; right: 0.35rem; font-size: 0.72rem; }
+.resum-setmana-obrir:hover { box-shadow: inset 0 0 0 1px #9568df; }
+.resum-setmana-obrir:focus-visible { outline: 2px solid #6941bd; }
+
+.resum-setmana-franges {
+  display: grid;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resum-setmana-franges li {
+  padding: 0.15rem 0.25rem;
+  border-radius: 0.3rem;
+  background: #eee5fa;
+  color: #492b72;
+  font-size: clamp(0.65rem, 1vw, 0.77rem);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+@media (max-width: 850px) {
+  .resum-setmana-dies { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .resum-setmana-dia { min-height: 0; }
+}
+
+@media (max-width: 600px) {
+  .visor-diari .visor-capcalera { grid-template-columns: 1fr auto; }
+  .visor-diari .visor-capcalera h1 { grid-area: auto / 1 / auto / -1; }
+  .visor-diari .visor-tauler { --mida-tram: 1.55rem; }
+}
+
+@media (max-width: 510px) {
+  .resum-setmanal { gap: 0.55rem; padding-block: 0.65rem; }
+  .resum-setmanal .visor-capcalera { gap: 0.6rem; padding-block: 0.7rem; }
+  .resum-setmana-dies { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.35rem; }
+  .resum-setmana-dia { padding: 0.45rem 0.4rem; }
+}

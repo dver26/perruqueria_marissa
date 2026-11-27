@@ -1,0 +1,311 @@
+body:has(.visor-dia) {
+  margin: 0;
+  background: #f3eff9;
+  overflow: hidden;
+}
+
+#root:has(> .visor-dia) {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.visor-dia {
+  --text-visor: #231737;
+  --muted-visor: #665a78;
+  --vora-visor: #e8e0f0;
+  --color-torn: #6941bd;
+  --color-ocupada: #a62947;
+  --ratlles-absencia: repeating-linear-gradient(135deg, #f4d4c4 0 5px, #fff0e9 5px 10px);
+  box-sizing: border-box;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: clamp(0.55rem, 2dvh, 1.25rem);
+  width: min(100%, 90rem);
+  min-height: 0;
+  margin-inline: auto;
+  padding: clamp(0.75rem, 3dvh, 2rem) clamp(0.75rem, 4vw, 3.75rem);
+  color: var(--text-visor);
+}
+
+.visor-capcalera {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: clamp(0.45rem, 3dvh, 1.8rem) 0.5rem;
+  padding: clamp(0.65rem, 3dvh, 1.65rem) clamp(0.75rem, 3vw, 2rem);
+  border-radius: 1.2rem;
+  background: radial-gradient(ellipse at top right, #533583 0, transparent 57%), #26183e;
+  color: #fff;
+}
+
+.visor-capcalera h1 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: clamp(1rem, min(4.4vw, 6dvh), 3rem);
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+}
+
+.visor-capcalera h1::first-letter { text-transform: uppercase; }
+
+.visor-capcalera button {
+  min-height: 2rem;
+  padding: 0.28rem 0.7rem;
+  border: 1px solid #ffffff55;
+  border-radius: 0.6rem;
+  background: #ffffff13;
+  color: inherit;
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.visor-capcalera button:hover { background: #ffffff2b; }
+.visor-capcalera button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.visor-enrere { justify-self: start; }
+.visor-enrere span { margin-right: 0.25rem; }
+
+.visor-navegacio { display: flex; gap: 0.35rem; }
+.visor-navegacio button { min-width: 2.2rem; font-size: 1.4rem; line-height: 1; }
+.visor-torn-seleccionat {
+  align-self: center;
+  padding-inline: 0.25rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.visor-horaris {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.65rem;
+  min-height: 0;
+  padding: clamp(0.65rem, 3dvh, 1.6rem);
+  border: 1px solid #e8e0f0;
+  border-radius: 1.2rem;
+  background: #fff;
+  box-shadow: 0 5px 24px #2b19430a;
+}
+
+.visor-jornada {
+  --amplada-escala: clamp(2.65rem, 5vw, 3.9rem);
+  --separacio-columnes: clamp(0.35rem, 1.3vw, 1rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  flex: 1;
+  min-height: 0;
+  gap: clamp(0.65rem, 2vw, 1.5rem);
+}
+
+.visor-tauler {
+  --cap-visor: 2.5rem;
+  --peu-visor: 3.2rem;
+  display: grid;
+  grid-template-columns: var(--amplada-escala) minmax(0, 1fr);
+  min-height: 0;
+  padding-top: 0.55rem;
+}
+
+.visor-escala {
+  container: escala-visor / size;
+  position: relative;
+  margin-block: var(--cap-visor) var(--peu-visor);
+  color: var(--muted-visor);
+  font-size: clamp(0.73rem, 1.1vw, 0.85rem);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.visor-escala span { position: absolute; right: 0.5rem; transform: translateY(-50%); }
+
+.visor-treballadores {
+  display: grid;
+  grid-template-columns: repeat(var(--columnes-visor), minmax(0, 1fr));
+  gap: var(--separacio-columnes);
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visor-treballadora {
+  display: grid;
+  grid-template-rows: var(--cap-visor) minmax(0, 1fr) var(--peu-visor);
+  min-width: 0;
+  min-height: 0;
+}
+
+.visor-persona {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-width: 0;
+  padding-bottom: 0.35rem;
+}
+
+.visor-inicials {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: clamp(1.3rem, 4dvh, 1.9rem);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #efe7fb;
+  color: #543389;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.visor-persona h2 {
+  overflow: hidden;
+  margin: 0;
+  font-size: clamp(0.78rem, 1.65vw, 1.05rem);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.visor-pista {
+  grid-row: 2;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 0.55rem;
+  background: linear-gradient(to bottom, #39244823 1px, transparent 1px) 0 0 / 100% var(--pas-escala), #f5f1fa;
+}
+
+.visor-torn, .visor-absencia, .visor-ocupada {
+  position: absolute;
+  inset-inline: 0;
+  border-radius: 0.38rem;
+}
+
+.visor-torn {
+  inset-block: 0;
+  clip-path: inset(var(--inici-franja) 0 var(--fi-franja) 0 round 0.38rem);
+  background: linear-gradient(to bottom, #fff 1px, transparent 1px) 0 0 / 100% calc(var(--pas-escala) / 2), var(--color-torn);
+}
+
+.visor-absencia, .visor-ocupada {
+  top: var(--inici-franja);
+  bottom: var(--fi-franja);
+}
+
+.visor-clau-torn { background: var(--color-torn); }
+.visor-absencia, .visor-clau-absencia { background: var(--ratlles-absencia); }
+.visor-ocupada, .visor-clau-ocupada { background: var(--color-ocupada); }
+.visor-ocupada { inset-inline: 0.15rem; border: 1px solid #fff9; }
+.visor-etiqueta-pista { z-index: 1; color: #453655; font-size: 0.75rem; font-weight: 600; }
+
+.visor-resum-franges {
+  grid-row: 3;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 0 0.6rem;
+  padding-top: 0.35rem;
+  overflow: auto;
+  color: var(--muted-visor);
+  font-size: clamp(0.65rem, 1.3vw, 0.82rem);
+  line-height: 1.25;
+  font-variant-numeric: tabular-nums;
+}
+
+.visor-text-absencia { color: #88472f; }
+.visor-text-ocupada { color: #8d223d; font-weight: 600; }
+
+.visor-llegenda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.15rem;
+  flex: none;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--vora-visor);
+  color: var(--muted-visor);
+  font-size: 0.72rem;
+}
+
+.visor-llegenda span { display: inline-flex; align-items: center; gap: 0.35rem; }
+.visor-llegenda i { width: 0.85rem; height: 0.65rem; border-radius: 0.2rem; }
+.visor-estat { margin: auto; padding: 0.75rem; text-align: center; color: var(--muted-visor); }
+
+.visor-confirmar-reserva {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.visor-confirmar-reserva select, .visor-confirmar-reserva button {
+  padding: 0.28rem 0.65rem;
+  border: 1px solid #d9cbee;
+  border-radius: 0.5rem;
+  background: #f6f0ff;
+  color: var(--text-visor);
+  font: inherit;
+}
+
+.visor-confirmar-reserva button:enabled { background: #6941bd; color: #fff; cursor: pointer; }
+.visor-confirmar-reserva button:disabled { opacity: 0.65; }
+.visor-confirmar-reserva p { margin: 0; }
+.visor-error-reserva { flex-basis: 100%; color: #8d223d; }
+
+@media (max-width: 600px) {
+  .visor-escala { font-size: 0.68rem; }
+}
+
+@container escala-visor (max-height: 430px) {
+  .visor-escala[data-densitat='alta'] :is([data-minut='30'], [data-minut='90']):not(:first-child, :last-child) {
+    display: none;
+  }
+}
+
+@container escala-visor (max-height: 275px) {
+  .visor-escala[data-densitat='mitjana'] :is([data-minut='30'], [data-minut='90']):not(:first-child, :last-child) {
+    display: none;
+  }
+}
+
+@container escala-visor (max-height: 205px) {
+  .visor-escala[data-densitat='alta'] span:is(:not([data-minut='0']), :nth-child(-n+4), :nth-last-child(-n+4)):not(:first-child, :last-child) {
+    display: none;
+  }
+}
+
+@container escala-visor (max-height: 180px) {
+  .visor-escala[data-densitat] span:is([data-minut='30'], [data-minut='90'], :nth-child(-n+3), :nth-last-child(-n+3)):not(:first-child, :last-child) {
+    display: none;
+  }
+}
+
+@container escala-visor (max-height: 120px) {
+  .visor-escala[data-densitat] span:not(:first-child, :last-child) { display: none; }
+}
+
+@media (max-height: 480px) {
+  .visor-dia { padding-block: 0.45rem; }
+  .visor-capcalera { gap: 0.25rem; padding-block: 0.4rem; }
+  .visor-horaris { padding-block: 0.45rem; }
+  .visor-llegenda { padding-top: 0.3rem; }
+  .visor-tauler { --cap-visor: 1.8rem; --peu-visor: 2.5rem; }
+}
+
+@media (max-height: 480px) and (min-width: 601px) {
+  .visor-dia:not(.resum-setmanal, .visor-diari) .visor-capcalera {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    column-gap: 0.75rem;
+  }
+
+  .visor-dia:not(.resum-setmanal, .visor-diari) .visor-capcalera h1 {
+    grid-area: 1 / 2;
+    font-size: clamp(1rem, 2.6vw, 1.45rem);
+  }
+}

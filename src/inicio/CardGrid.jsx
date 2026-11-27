@@ -12,7 +12,7 @@ import { textoComparable } from '../utils/persones.js'
 
 import { useCallback, useEffect, useState } from 'react'
 
-import { ACTIONS, PANTALLAS } from '../utils/consts.js'
+import { ACTIONS, PANTALLAS, RESERVA_BUIDA } from '../utils/consts.js'
 
 const CardGrid = () => {
   const { state, dispatch } = useAppContext()
@@ -103,11 +103,12 @@ const CardGrid = () => {
 
   const handleReservarHora = () => {
     const { id, nombre, apellidos } = state.client
-    dispatch({ type: ACTIONS.ACTUALITZAR, payload: {
-      idClientReserva: id, nomClientReserva: [nombre, apellidos].filter(Boolean).join(' ')
-    } })
+    const nomClientReserva = [nombre, apellidos].filter(Boolean).join(' ')
+    dispatch({
+      type: ACTIONS.ACTUALITZAR,
+      payload: { ...RESERVA_BUIDA, nomClientReserva, idClientReserva: id, idReserva: crypto.randomUUID(), missatgeReserva: null }
+    })
     setAccionsC(false)
-
   }
 
   const handleEditarC = () => {
@@ -174,7 +175,17 @@ const CardGrid = () => {
         <button className='boto-treballadors' onClick={handleClickT}>
           Treballadors
         </button>
+        <button className='boto-resum' type='button' onClick={() => dispatch({
+          type: ACTIONS.ACTUALITZAR,
+          payload: { pantalla: PANTALLAS.RESUM_DIARI, dataResum: new Date(), setmanaOrigenResum: null }
+        })}>Resum Diari</button>
+        <button className='boto-resum' type='button' onClick={() => dispatch({
+          type: ACTIONS.ACTUALITZAR,
+          payload: { pantalla: PANTALLAS.RESUM_SETMANAL, setmanaOrigenResum: null }
+        })}>Resum Setmanal</button>
+        <button className='boto-resum' type='button' disabled>Resum Mensual</button>
       </div>
+      {state.missatgeReserva && <p className='instruccio-serveis' role='status'>{state.missatgeReserva}</p>}
       {panellC && (
         <div className='panell-clients'>
           <input
@@ -251,6 +262,7 @@ const CardGrid = () => {
 
         </div>
       )}
+      {!state.idClientReserva && <p className='instruccio-serveis'>Per triar un servei, selecciona un client i prem «Reservar Hora».</p>}
       <div className='container-grid'>
         {state.servicios.map((servei) => {
           return <Card key={servei.id} id={servei.id} />

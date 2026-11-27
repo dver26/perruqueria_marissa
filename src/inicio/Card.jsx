@@ -18,9 +18,9 @@ const Card = ({ id }) => {
   }
 
   return (
-    <div onClick={handleClick} className='element-grid'>
-      <h3 className='titulo'>{servei.nombre}</h3>
-    </div>
+    <button type='button' onClick={handleClick} className='element-grid' disabled={!state.idClientReserva}>
+      <span className='titulo'>{servei.nombre}</span>
+    </button>
   )
 }
 
